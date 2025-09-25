@@ -1,0 +1,41 @@
+main{
+    padding: 3%;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+}
+
+.form__h1{
+    margin-bottom: 1em;
+}
+
+.form__label{
+    height: 100%;
+    border: solid 1px blue;
+    display: flex;
+    align-items:
+}
+
+.label__input{
+    width: 20em;
+    display: block;
+    margin-bottom: 1em;
+}
+
+.label__input--msj{
+    height: 7em;
+    resize: none;
+}
+
+.label__input--button{
+    width: 5em;
+}
+
+.label__datos{
+    height: 100%;
+    width: 15em;
+    margin-left: 2em;
+    border: 1px solid black;
+}
