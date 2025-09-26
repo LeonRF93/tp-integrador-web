@@ -5,32 +5,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
+    <header>
+        <p>cosas del header</p>
+    </header>
     <main>
         <form>
-            <div class="form">
-                <p class="form__h1">CONTACTO</p>
+            <section class="form">
+                <div class="lol">
+                    <p class="form__p form__p--1">ENVÍANOS UN MENSAJE</p>
+                    <p class="form__p form__p--2">BÚSCANOS EN</p>
+                </div>
                 <div class="form__label label">
                     <div class="label__usuario usuario">
-                        <input class="label__input" type="text" placeholder="Nombre/s" name="nombre">
-                        <input class="label__input" type="text" placeholder="Apellido/s" name="apellido">
-                        <input class="label__input" type="text" placeholder="Correo electrónico" name="email">
-                        <textarea class="label__input label__input--msj" placeholder="Mensaje" name="mensaje"></textarea>
-                        <!-- <input class="label__input label__input--msj" type="text" placeholder="Mensaje" name="mensaje"> -->
+                        <input class="usuario__input" type="text" placeholder="Nombre/s" name="nombre">
+                        <input class="usuario__input" type="text" placeholder="Apellido/s" name="apellido">
+                        <input class="usuario__input" type="text" placeholder="Correo electrónico" name="email">
+                        <textarea class="usuario__input usuario__input--msj" placeholder="Mensaje"
+                            name="mensaje"></textarea>
                     </div>
-                    <div class="label__datos">
-                        <h3>tel: lol</h3>
-                        <h3>ig: lol</h3>
-                        <h3>mail: lol</h3>
+                    <div class="label__datos datos">
+                        <div class="datos__block">
+                            <a class="datos__a" href="https://x.com/TeamQuesoGG"><i class="fa-brands fa-twitter"></i>
+                                @teamqueso</a>
+                        </div>
+                        <div class="datos__block">
+                            <a class="datos__a" href="https://www.instagram.com/teamquesogg/"><i
+                                    class="fa-brands fa-instagram"></i> @TEAMQUESO</a>
+                        </div>
+                        <div class="datos__block">
+                            <a class="datos__a" href="https://www.youtube.com/c/TeamQueso"><i
+                                    class="fa-brands fa-tiktok"></i> @teamQuesoReal</a>
+                        </div>
+                        <div class="datos__block">
+                            <a class="datos__a" href="https://www.tiktok.com/@teamquesogg"><i
+                                    class="fa-brands fa-youtube"></i> @teamQueso845</a>
+                        </div>
                     </div>
                 </div>
-                <button class="label__input label__input--button">Enviar</button>
-            </div>
+                <button class="form__button"><div class="hover-underline">ENVIAR</div></button>
+            </section>
         </form>
+        <section class="ubicacionWrapper">
+            <div class="ubicacionWrapper__divUbicacion divUbicacion">
+                <p class="divUbicacion__p">ENCUENTRANOS EN</p>
+                <iframe class="divUbicacion__mapa"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.556429219889!2d-3.7780649241234423!3d40.39652257144279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd418865c098eb71%3A0xd23c49c594fbf873!2sTeam%20Queso%20Esports%20Sl!5e0!3m2!1ses!2sar!4v1758919586181!5m2!1ses!2sar"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
     </main>
 </body>
 

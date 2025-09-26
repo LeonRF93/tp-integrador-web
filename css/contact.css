@@ -1,41 +1,155 @@
-main{
-    padding: 3%;
+body{
+    font-size:  2em;
 }
+
+main{
+    border: solid 1.5em var(--color-principalDegradado);
+}
+
+a{
+    text-decoration: none;
+}
+
+/* ---------- FORMULARIO Y CONTACTO ---------- */
 
 form{
     display: flex;
     justify-content: center;
 }
 
-.form__h1{
-    margin-bottom: 1em;
+.form{
+    margin-top: 2%;
+    width: 80%;
+}
+
+.lol{
+    display: flex;
+}
+
+.form__p{
+    font-size: 80%;
+    margin-bottom: 2%;
+}
+
+.form__p--1{
+    width: 50%;
+}
+
+.form__p--2{
+    width: 50%;
+    text-align: center;
 }
 
 .form__label{
-    height: 100%;
-    border: solid 1px blue;
+    height: fit-content;
+    /* border: solid 1px blue; */
     display: flex;
-    align-items:
 }
 
-.label__input{
-    width: 20em;
-    display: block;
-    margin-bottom: 1em;
+.label__usuario{
+    width: 50%;
+    height: fit-content;
+    /* border: solid 1px red; */
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
 
-.label__input--msj{
-    height: 7em;
+.usuario__input{
+    height: 3em;
+}
+
+.usuario__input--msj{
+    height: 6em;
     resize: none;
 }
 
-.label__input--button{
-    width: 5em;
+.label__datos{
+    background-color: var(--color-principalDegradado);
+    text-align: center;
+    padding: 0.3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    margin-left: 2%;
+    border: 1px solid black;
+    overflow-wrap: break-word;
 }
 
-.label__datos{
-    height: 100%;
-    width: 15em;
-    margin-left: 2em;
-    border: 1px solid black;
+.datos__a{
+    color: var(--color-secundario);
+    font-size: 0.8em;
 }
+
+.form__button{
+    width: 5em;
+    height: 2em;
+    font-size: 0.5em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-top: 1em;
+    border: none;
+    border-radius: 10%;
+    color: white;
+    background-color: var(--color-secundario);
+}
+
+.form__button:hover {
+    cursor: pointer;
+}
+
+.hover-underline {
+  font-size: 1em;
+  color: #ffffff;
+  position: relative;
+  display: inline-block;
+}
+
+.hover-underline::after,
+.hover-underline::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, var(--color-principal), var(--color-principalDegradado));
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s ease-out;
+}
+
+.hover-underline::before {
+  top: -5px;
+  transform-origin: left;
+}
+
+.hover-underline:hover::after,
+.hover-underline:hover::before {
+  transform: scaleX(1);
+}
+
+
+/* ---------- FORMULARIO Y CONTACTO ---------- */
+
+
+/* ---------- MAPA ---------- */
+
+.ubicacionWrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.divUbicacion{
+    margin-top: 2%;
+    text-align: center;
+    width: 80%;
+}
+
+.divUbicacion__mapa{
+    display: block; /* para borrar el espacio que deja abajo el inline*/
+    margin-top: 2%;
+    width: 100%;
+}
+
+/* ---------- MAPA ---------- */
