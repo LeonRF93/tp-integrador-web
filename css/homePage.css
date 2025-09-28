@@ -1,0 +1,100 @@
+
+
+.barra{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3em;
+}
+header{
+    height: 15%;
+    border-bottom: 1px solid var(--color-secundario);
+}
+.barra-logo{
+    height: 100%;
+}
+.barra-logo img{
+    height: 100%;
+}
+.barra-buscador{
+    background-color: var(--color-secundario);
+    display: flex;
+    width: 65%; 
+    height: 75%;
+    border-radius: min(1.5em, 30px);
+    align-items: center;
+}
+.barra-buscador form{
+    width: 100%;
+    display: flex;
+    padding: 0 0.6em;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+.barra-buscador input , button{
+    border: none;   
+}
+.barra-buscador button{
+    background-color: var(--color-principal);
+    border-radius: 50%;
+    width: 10%;
+    border: 0;
+    height: calc(100% - 0.4em);
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+.barra-buscador button:hover{ 
+    transform : scale(1.15);
+}
+.barra-buscador input{
+    flex:1; /* el basic = 0 , el grow = 1 y el shirnk 1*/
+    background-color: transparent;
+}
+input::placeholder {
+    color: black;
+}
+form input:focus {
+    outline: none;
+}
+.buscador-carrito{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 10%;
+    position: relative;
+}
+.buscador-carrito i{
+    font-size: 150%;
+}
+.buscador-carrito a{
+    height: calc(100% - 1em);
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background-color 0.5s ease;
+    color: var(--color-secundario);
+}
+.buscador-carrito a:hover{
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+}
+.buscador-carrito span{
+    position: absolute;
+    font-weight: bold;
+    top: 10%;
+    bottom: 0;
+    left: 60%;
+    right: 0;
+}
+:root {
+  --color-principal: #122f87;
+  --color-principalDegradado: #090b35;
+  --color-secundario: #e7c50c;
+  --color-secundarioDegradado: #99840a;
+  --color-texto: #f4f4f4;
+}
