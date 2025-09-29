@@ -1,10 +1,69 @@
+
+/* -------------------- RESET -------------------- */
+
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
+
 body {
-  font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-texto);
+    height: 100vh;
+    background: radial-gradient(circle, var(--color-principal), var(--color-principalDegradado));
+}
+
+a {
+    color: var(--color-texto);
+}
+
+header {
+    font-size: 50%;
+    height: 15%;
+    border-bottom: 1px solid var(--color-secundario);
+}
+
+footer {
+    font-size: 50%;
+    height: 15%;
+    border-top: 1px solid var(--color-secundario);
+}
+
+
+/* -------------------- RESET -------------------- */
+
+/* -------------------- VARIABLES -------------------- */
+
+:root {
+    --color-principal: #122f87;
+    --color-principalDegradado: #090b35;
+    --color-secundario: #e7c50c;
+    --color-secundarioDegradado: #99840a;
+    --color-texto: #f4f4f4;
+}
+
+/* -------------------- VARIABLES -------------------- */
+
+
+/* -------------------- MEDIA QUERIES -------------------- */
+
+/* --- CELUS ---*/
+@media (max-width: 480px) {
+    body{
+        font-size: 70%;
+    }
+}
+
+
+/* --- TABLETS ---*/
+@media (min-width: 481px) and (max-width: 768px) {
+    body{
+        font-size: 90%;
+    }
+}
+
+/* -------------------- MEDIA QUERIES -------------------- */
+body {
   display: flex;
   justify-content: center;
   padding: 2em;
@@ -14,13 +73,15 @@ body {
   border-radius: 1em;
   overflow: hidden;
   width: 90%;
+  color: #000000;
 }
 .calendar_header {
     display: flex;
+    font-size: 1em;
     justify-content: space-between;
     align-items: center;
     padding: 1em;
-    background-color: #4b2e83;
+    background-color: #e7c50c;
     color: white;
     border-radius: 15px;
 }
@@ -28,17 +89,9 @@ body {
     text-align: center;
 }
 
-
-.calendar__button {
-  background: #fff;
-  border: 0.1em solid #b6b6b6;
-  border-radius: 2em;
-  padding: 0.5em 1em;
-}
 .calendar__weekdays {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  background: #ffffff;
   text-align: center;
   padding: 0.5rem 0;
   font-weight: 600;
@@ -47,7 +100,6 @@ body {
 
 .calendar__weekdays span {
   padding: 0.5em 0;
-  color: #575757;
 }
 .calendar__days {
   display: grid;
@@ -57,8 +109,7 @@ body {
   padding: 1em;
 }
 .calendar__day {
-  background: #ffffff;
-  border: 0.1em solid #cfcfcf;
+  border: 0.1em solid #e7c50c;
   border-radius: 1em;
   min-height: 7em;
   display: flex;
@@ -71,3 +122,14 @@ body {
   background: transparent;
   border: none;
 }
+.calendar__day .today {
+    background-color: #000000;
+    color: white;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
