@@ -1,34 +1,38 @@
-
-
+.html{
+    font-size: 16px;
+}
 .barra{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 3em;
-}
-header{
+    padding: 0 4%;
     height: 15%;
     border-bottom: 1px solid var(--color-secundario);
 }
 .barra-logo{
     height: 100%;
 }
+.barra-logo a{
+    height: 100%;
+    display: inline-block;
+}
 .barra-logo img{
     height: 100%;
+    display: inline-block;
 }
 .barra-buscador{
     background-color: var(--color-secundario);
     display: flex;
-    width: 65%; 
-    height: 75%;
-    border-radius: min(1.5em, 30px);
+    width: 40%; 
+    height: 80%;
+    border-radius: 9999px;
     align-items: center;
 }
 .barra-buscador form{
     width: 100%;
     display: flex;
-    padding: 0 0.6em;
+    padding: 0 2%;
     justify-content: space-between;
     height: 100%;
     align-items: center;
@@ -36,22 +40,26 @@ header{
 .barra-buscador input , button{
     border: none;   
 }
+.barra-buscador input{
+    flex:1; /* el basic = 0 , el grow = 1 y el shirnk 1*/
+    background-color: transparent;
+    min-width: 0;
+    padding: 0;
+    height: 100%;
+
+}
 .barra-buscador button{
     background-color: var(--color-principal);
     border-radius: 50%;
     width: 10%;
-    border: 0;
-    height: calc(100% - 0.4em);
+    height: 90%;
     cursor: pointer;
     transition: transform 0.5s ease;
 }
 .barra-buscador button:hover{ 
     transform : scale(1.15);
 }
-.barra-buscador input{
-    flex:1; /* el basic = 0 , el grow = 1 y el shirnk 1*/
-    background-color: transparent;
-}
+
 input::placeholder {
     color: black;
 }
@@ -91,6 +99,36 @@ form input:focus {
     left: 60%;
     right: 0;
 }
+/*-----------FOOTER---------*/
+.pie-pagina{
+    display: flex;
+    padding: 1.5% 3%;
+    justify-content: space-evenly;
+    background-color: black;
+    border-top: 1px solid var(--color-secundario);
+    align-items: center;
+}
+.pie-pagina-nosotros{
+    position: relative;
+}
+.pie-pagina-nosotros h3{
+}
+.pie-pagina-nosotros-miembros{
+    margin-top: 3%;
+    padding-top: 8%;
+        border-top: 2px solid #e7c50c;
+
+}
+.pie-pagina-nosotros-miembros ul{
+    list-style: none;
+    padding: 0;
+}
+.pie-pagina-nosotros-miembros ul li{
+    margin-top: 10%;
+}
+
+/*--------------------------*/
+
 :root {
   --color-principal: #122f87;
   --color-principalDegradado: #090b35;
