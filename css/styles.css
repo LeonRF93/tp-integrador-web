@@ -35,3 +35,22 @@ header{
 }
 
 /* -------------------- VARIABLES -------------------- */
+
+/* -------------------- MEDIA QUERIES -------------------- */
+
+/* --- CELUS ---*/
+@media (max-width: 480px) {
+    body{
+        font-size: 70%;
+    }
+}
+
+
+/* --- TABLETS ---*/
+@media (min-width: 481px) and (max-width: 768px) {
+    body{
+        font-size: 90%;
+    }
+}
+
+/* -------------------- MEDIA QUERIES -------------------- */
