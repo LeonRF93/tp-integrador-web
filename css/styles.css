@@ -110,26 +110,38 @@ body {
 }
 .calendar__day {
   border: 0.1em solid #e7c50c;
-  border-radius: 1em;
+  border-radius: 15%;
   min-height: 7em;
   display: flex;
   justify-content:center;
   align-items: flex-start;
-  padding: 0.5em;
+  padding: 5%;
   font-size: 0.6em;
 }
 .calendar__day .empty {
   background: transparent;
   border: none;
 }
-.calendar__day .today {
-    background-color: #000000;
-    color: white;
-    width: 2em;
-    height: 2em;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.calendar_button{
+    height: 2.5em;
+    width: 3em;
+    padding: 0.5em;
+    border-radius: 2em;
+    color: var(--color-texto);
+    border-color: var(--color-secundarioDegradado);
+    font-size: 85%;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--color-principalDegradado);
 }
 
+.calendar__day.today h4 {
+  background-color: var(--color-secundario);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  font-weight: bold;
+}

@@ -4,18 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
   <section class="calendar">
+    
 
     <header class="calendar_header">
-        <button class="calendar_button calendar_button-previous">&#8592;</button>
+        <button class="calendar_button calendar_button-previous">
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+
         <div class="calendar_header-title">
             <h2 class="calendar_month">Septiembre</h2>
             <span class="calendar_year">2025</span>
         </div>
-        <button class="calendar_button calendar_button-next">&#8594;</button>
+
+        <button class="calendar_button calendar_button-next">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
     </header>
 
     <div class="calendar__weekdays">
@@ -30,11 +38,7 @@
 
 
     <ol class="calendar__days">
-      <li class="calendar__day">
-        <div class="today">15</div>
-      </li>
-
-      <li class="calendar__day">
+      <li class="calendar__day today">
         <h4>1</h4>
       </li>
       <li class="calendar__day">
