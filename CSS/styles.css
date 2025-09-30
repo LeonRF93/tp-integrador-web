@@ -5,6 +5,8 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.04em;
+    line-height: 1.5em; 
     color: var(--color-texto);
     height: 100vh;
     background: radial-gradient(circle, var(--color-principal), var(--color-principalDegradado));
