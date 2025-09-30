@@ -66,19 +66,26 @@ footer {
 body {
   display: flex;
   justify-content: center;
+  align-items: center;
+  padding: 2em;
+}
+.calendar_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 2em;
 }
 .calendar {
   background: #fff;
-  border-radius: 1em;
-  overflow: hidden;
-  width: 90%;
+  border-radius: 2em;
+  overflow: auto;
+  width: 95%;
   color: #000000;
 }
 .calendar_header {
     display: flex;
     font-size: 1em;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding: 1em;
     background-color: #e7c50c;
@@ -93,13 +100,8 @@ body {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   text-align: center;
-  padding: 0.5rem 0;
-  font-weight: 600;
-  border-bottom: 1px solid #e6e6e6;
-}
-
-.calendar__weekdays span {
-  padding: 0.5em 0;
+  padding: 1em 1em 0 1em;
+  font-weight: bold;
 }
 .calendar__days {
   display: grid;
@@ -110,7 +112,7 @@ body {
 }
 .calendar__day {
   border: 0.1em solid #e7c50c;
-  border-radius: 15%;
+  border-radius: 2em;
   min-height: 7em;
   display: flex;
   justify-content:center;
