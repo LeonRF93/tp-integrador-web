@@ -1,88 +1,100 @@
-
 /* --------------------- CSS propio ---------------------------- */
-*{
+* {
     padding: 0;
 }
-h2{
+
+h2 {
     color: var(--color-secundario);
 }
-.contenedoresPresentacion{
+
+.contenedoresPresentacion {
     display: flex;
     flex-direction: row;
     height: 40em;
     margin: 2em 2em 1.5em;
 
 }
-.contenedoresInfo{
+
+.contenedoresInfo {
     display: flex;
     flex-direction: row;
     height: 60em;
     margin: 0 2em 1.5em;
 
 }
-.contenedorImagen{
+
+.contenedorImagen {
     padding: 1em;
     height: 100%;
-    width: 58.75em;
+    width: 55%;
     margin-right: 1em;
     display: flex;
     position: relative;
-    
+
 }
-.contenedorTexto{
+
+.contenedorTexto {
     line-height: 1.2;
     width: 53.5em;
     margin: 1em 0;
     color: var(--color-texto);
-    
+
 }
-.textoPresentacion{
+
+.textoPresentacion {
     display: flex;
-    padding: 13.5em 0;
+    padding: 20% 0;
     flex-direction: column;
-    color: var(--color-texto); 
+    color: var(--color-texto);
     position: absolute;
     height: 90%;
     width: 90%;
 }
-.textoPresentacionCentro{
-    padding: 0 0 0 35%;
+
+.textoPresentacionCentro {
+    padding-left: 35%;
 }
-.titulo{
+
+.titulo {
     font-size: 2em;
 }
-.subtitulo{
+
+.subtitulo {
     font-size: 1em;
 }
 
-.imagenCurso{
+.imagenCurso {
     height: 90%;
     width: 90%;
     position: absolute;
     border-radius: 0.5em;
 }
 
-.descripcionCurso{
+.descripcionCurso {
     height: 19em;
 }
-.duracionCurso{
+
+.duracionCurso {
     height: 3.75em;
 }
-.modalidadCurso{
+
+.modalidadCurso {
     height: 3.75em;
 }
-.botonPrograma{
+
+.botonPrograma {
     height: 3em;
     width: 10em;
     padding: 0.5em;
     border-radius: 2em;
     color: var(--color-secundario);
-    background-color: #080B35;
+    background-color: var(--color-principalDegradado);
     border-color: var(--color-secundarioDegradado);
     font-size: 85%;
-    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
 }
-.contenedorCompra{
+
+.contenedorCompra {
     padding: 1em;
     margin: 2em 1em 0em 0em;
     border-radius: 1em;
@@ -92,13 +104,15 @@ h2{
     justify-content: space-between;
     align-items: center;
 }
-.infoPrincipal{
+
+.infoPrincipal {
     width: 80%;
     height: 90%;
     margin-right: 2em;
 }
-.infoSecundaria{
-    background-color: #080B35;
+
+.infoSecundaria {
+    background-color: var(--color-principalDegradado);
     border-radius: 1.5em;
     display: flex;
     flex-direction: column;
@@ -106,21 +120,25 @@ h2{
     width: 20%;
     margin: 0 3em 0 1em;
 }
-.flex-row{
+
+.flex-row {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
 }
-.footer{
+
+.footer {
     font-size: 50%;
     height: 15%;
     border-top: 1px solid var(--color-secundario);
 }
-.imagenCursoAlt{
+
+.imagenCursoAlt {
     border-radius: 1em;
     width: 100%;
     height: 90%;
 }
-.CursosAlt{
+
+.CursosAlt {
     position: relative;
     background-color: var(--color-principal);
     padding: 0.5em;
@@ -129,14 +147,108 @@ h2{
     height: 33%;
     width: 90%;
 }
-.textoCursosAlt{
+
+.textoCursosAlt {
     display: flex;
     position: absolute;
     width: 90%;
     justify-content: center;
 }
-.textoCursos{
+
+.textoCursos {
     display: flex;
     width: 90%;
     padding: 0.3em 0 0 1em;
+}
+.programa{
+    display: flex;
+    flex-direction: column;
+}
+.programaEdu{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70%;
+}
+.niveles{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 80%;
+    margin: 2em 1em;
+    padding: 1em 2em;
+    background-color: var(--color-principalDegradado);
+    border-radius: 0.5em;
+}
+.niveles__divide{
+    display: flex;
+    flex-direction: row;
+    height: 33%;
+    width: 100%;
+    margin-bottom: 0.5em;
+}
+.niveles__divide--column{
+    width: 50%;
+}
+.niveles__divide--column-1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.numNivel{
+    padding-top: 1em;
+}
+
+
+
+@media (max-width: 480px) {
+    body {
+        font-size: 50%;
+    }
+    .contenedoresPresentacion{
+        height: 70em;
+        flex-direction: column;
+    }
+    .contenedorImagen{
+        width: 100%;
+        height: 30%;
+    }
+    .contenedorTexto{
+        width: 100%;
+        height: 70%;
+    }
+    .descripcionCurso{
+        height: 30em;
+    }
+    .textoPresentacionCentro    {
+        padding-left: 27%
+    }
+    .contenedoresInfo{
+        flex-direction: column;
+    }
+    .infoSecundaria{
+        width: 100%;
+        height: 10em;
+        flex-direction: row;
+        margin: 0;
+    }
+    .CursosAlt{
+        height: 95%;
+        width: 33%;
+        margin: 0.5em;
+    }
+}
+.textoChico{
+    font-size: 0.5em;
+    color: var(--color-texto);
+    margin-bottom: 1em;
+}
+
+
+/* --- TABLETS ---*/
+@media (min-width: 481px) and (max-width: 768px) {
+    body {
+        font-size: 70%;
+    }
 }
