@@ -14,17 +14,36 @@
 <body>
     <header class="barra">
         <div class="barra-logo">
-            <a href="index.html"><img src="./img/iconoPage.png" alt="Logo"></a>
+            <a href="index.html"><img src="./img/iconoPage.png" alt="Logo Team Queso"></a>
         </div>
+
         <div class="barra-buscador">
-            <form action="" method="get" autocomplete="on" id="search-form">
-                <input type="search" name="Buscador" id="Buscador" placeholder="Buscar">
-                <button aria-label="buscador"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <form action="/buscar" method="get" autocomplete="off" id="search-form">
+                <input type="search" name="Buscador" id="buscador" list="cursos-sugerencias"
+                    placeholder="Buscar cursos...">
+                <datalist id="cursos-sugerencias">
+                    <option value="Java Developer Professional">
+                    <option value="Python & Data Science">
+                    <option value="SQL Master: Bases de Datos">
+                    <option value="JavaScript Moderno">
+                    <option value="React.js desde Cero">
+                    <option value="Node.js Backend">
+                    <option value="Diseño UX/UI">
+                    <option value="Machine Learning">
+                    <option value="DevOps Fundamentals">
+                    <option value="Mobile Apps con Flutter">
+                </datalist>
+                <button type="submit" aria-label="Buscar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
             </form>
         </div>
+
         <div class="buscador-carrito">
-            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
-            <p>1</p>
+            <a href="/carrito" aria-label="Carrito de compras">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>1</span>
+            </a>
         </div>
     </header>
     <nav class="navbar">
@@ -41,20 +60,216 @@
     </nav>
     <main>
         <section class="main__seccion1">
-            <img src="./img/img1.jpg" alt="Imagen de ejeplo">
+            <div class="main__seccion1__banner1">
+                <div class="main__seccion1-contenido">
+                    <div class="main__seccion1-info">
+                        <h1>¡Último día para disfrutar de estos descuentos!</h1>
+                        <p>Tienes cursos para superar
+                            los desafíos del presente
+                            (y del futuro) desde solo 9,99 US$.</p>
+                    </div>
+                    <div class="main__seccion1-info">
+                        <h1>¡Aprende a usar un zanpakutō!</h1>
+                        <p>Solo necesitas 5 sesiones con Kisuke Urahara y tenes
+                            el bankai en tus mano,Sumate a Team Queso.
+                        </p>
+                    </div>
+                </div>
+                <div class="main__seccion1-foto">
+                    <img src="./img/profesor-removebg-preview.png" alt="Imagen profesor">
+                </div>
+            </div>
         </section>
         <section class="main__seccion2">
-            <div>
+            <div class="main__seccion2__contenido1">
                 <img src="./img/ejemplo1.webp" alt="Imagen ejemplo1">
             </div>
-            <div>
+            <div class="main__seccion2__contenido2">
                 <img src="./img/ejemplo1.webp" alt="Imagen ejemplo1">
             </div>
-            <div>
+            <div class="main__seccion2__contenido3">
                 <img src="./img/ejemplo1.webp" alt="Imagen ejemplo1">
             </div>
         </section>
-        <section></section>
+
+        <section class="main__seccion3">
+            <div class="main__seccion3__texto">
+                <h2>Cursos destacados de Team Queso</h2>
+                <p>Creamos rutas de aprendizaje especialmente para guiarte en las
+                    herramientas y conocimientos más demandados en el mercado laboral.</p>
+                <p>¿Con cuál vas a empezar?</p>
+            </div>
+            <div class="main__seccion3__cards">
+                <article class="curso-card">
+                    <div class="curso-card__imagen">
+                        <img src="./img/cursoJAVA.jpg" alt="Imagen curso Java">
+                    </div>
+                    <div class="curso-card__contenido">
+                        <h3>Java Developer Professional</h3>
+                        <p>Domina Java desde cero hasta nivel avanzado. Spring Boot, APIs REST y más.</p>
+                    </div>
+                    <div class="curso-card__duracion">
+                        <span>⏱️ 45 horas</span>
+                    </div>
+                    <div class="curso-card__precio">
+                        <span>$10000</span>
+                    </div>
+                    <div class="curso-card__botones">
+                        <button>
+                            <i class="fas fa-shopping-cart"></i>Comprar
+                        </button>
+                        <a href="">Ver detalle</a>
+                    </div>
+
+                </article>
+                <article class="curso-card">
+                    <div class="curso-card__imagen">
+                        <img src="./img/cursoJAVA.jpg" alt="Imagen curso Java">
+                    </div>
+                    <div class="curso-card__contenido">
+                        <h3>Java Developer Professional</h3>
+                        <p>Domina Java desde cero hasta nivel avanzado. Spring Boot, APIs REST y más.</p>
+                    </div>
+                    <div class="curso-card__duracion">
+                        <span>⏱️ 45 horas</span>
+                    </div>
+                    <div class="curso-card__precio">
+                        <span>$10000</span>
+                    </div>
+                    <div class="curso-card__botones">
+                        <button>
+                            <i class="fas fa-shopping-cart"></i>Comprar
+                        </button>
+                        <a href="">Ver detalle</a>
+                    </div>
+
+                </article>
+                <article class="curso-card">
+                    <div class="curso-card__imagen">
+                        <img src="./img/cursoJAVA.jpg" alt="Imagen curso Java">
+                    </div>
+                    <div class="curso-card__contenido">
+                        <h3>Java Developer Professional</h3>
+                        <p>Domina Java desde cero hasta nivel avanzado. Spring Boot, APIs REST y más.</p>
+                    </div>
+                    <div class="curso-card__duracion">
+                        <span>⏱️ 45 horas</span>
+                    </div>
+                    <div class="curso-card__precio">
+                        <span>$10000</span>
+                    </div>
+                    <div class="curso-card__botones">
+                        <button>
+                            <i class="fas fa-shopping-cart"></i>Comprar
+                        </button>
+                        <a href="">Ver detalle</a>
+                    </div>
+
+                </article>
+                <article class="curso-card">
+                    <div class="curso-card__imagen">
+                        <img src="./img/cursoJAVA.jpg" alt="Imagen curso Java">
+                    </div>
+                    <div class="curso-card__contenido">
+                        <h3>Java Developer Professional</h3>
+                        <p>Domina Java desde cero hasta nivel avanzado. Spring Boot, APIs REST y más.</p>
+                    </div>
+                    <div class="curso-card__duracion">
+                        <span>⏱️ 45 horas</span>
+                    </div>
+                    <div class="curso-card__precio">
+                        <span>$10000</span>
+                    </div>
+                    <div class="curso-card__botones">
+                        <button>
+                            <i class="fas fa-shopping-cart"></i>Comprar
+                        </button>
+                        <a href="">Ver detalle</a>
+                    </div>
+
+                </article>
+                <article class="curso-card">
+                    <div class="curso-card__imagen">
+                        <img src="./img/cursoJAVA.jpg" alt="Imagen curso Java">
+                    </div>
+                    <div class="curso-card__contenido">
+                        <h3>Java Developer Professional</h3>
+                        <p>Domina Java desde cero hasta nivel avanzado. Spring Boot, APIs REST y más.</p>
+                    </div>
+                    <div class="curso-card__duracion">
+                        <span>⏱️ 45 horas</span>
+                    </div>
+                    <div class="curso-card__precio">
+                        <span>$10000</span>
+                    </div>
+                    <div class="curso-card__botones">
+                        <button>
+                            <i class="fas fa-shopping-cart"></i>Comprar
+                        </button>
+                        <a href="">Ver detalle</a>
+                    </div>
+
+                </article>
+                <article class="curso-card">
+                    <div class="curso-card__imagen">
+                        <img src="./img/cursoJAVA.jpg" alt="Imagen curso Java">
+                    </div>
+                    <div class="curso-card__contenido">
+                        <h3>Java Developer Professional</h3>
+                        <p>Domina Java desde cero hasta nivel avanzado. Spring Boot, APIs REST y más.</p>
+                    </div>
+                    <div class="curso-card__duracion">
+                        <span>⏱️ 45 horas</span>
+                    </div>
+                    <div class="curso-card__precio">
+                        <span>$10000</span>
+                    </div>
+                    <div class="curso-card__botones">
+                        <button>
+                            <i class="fas fa-shopping-cart"></i>Comprar
+                        </button>
+                        <a href="">Ver detalle</a>
+                    </div>
+
+                </article>
+            </div>
+        </section>
+
+        <section class="main__seccion4">
+            <div class="main__seccion4__texto">
+                <h2>Métodos de pago</h2>
+                <p>Aceptamos múltiples formas de pago para tu comodidad.
+                    Elige la que mejor se adapte a tus necesidades.
+                </p>
+            </div>
+
+            <div class="main__seccion4__metodos">
+                <div class="metodos-carta">
+                    <i class="fa-brands fa-cc-visa"></i>
+                    <span>Visa</span>
+                </div>
+                <div class="metodos-carta">
+                    <i class="fa-brands fa-cc-mastercard"></i>
+                    <span>Mastercard</span>
+                </div>
+                <div class="metodos-carta">
+                    <i class="fa-brands fa-cc-amex"></i>
+                    <span>American Express</span>
+                </div>
+                <div class="metodos-carta">
+                    <i class="fa-brands fa-paypal"></i>
+                    <span>PayPal</span>
+                </div>
+                <div class="metodos-carta">
+                    <i class="fa-solid fa-wallet"></i>
+                    <span>Mercado Pago</span>
+                </div>
+                <div class="metodos-carta">
+                    <i class="fa-solid fa-building-columns"></i>
+                    <span>Transferencias</span>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="pie-pagina">
         <div class="pie-pagina-contenido">
