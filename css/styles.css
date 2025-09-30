@@ -29,5 +29,18 @@ a{
   --color-secundarioDegradado: #99840a;
   --color-texto: #f4f4f4;
 }
+/* --- CELUS ---*/
+@media (max-width: 480px) {
+    body{
+        
+    }
+}
 
+
+/* --- TABLETS ---*/
+@media (min-width: 481px) and (max-width: 768px) {
+    body{
+        font-size: 90%;
+    }
+}
 /* -------------------- VARIABLES -------------------- */

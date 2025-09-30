@@ -9,24 +9,26 @@
     align-items: center;
     padding: 0 4%;
     height: 10%;
-    border-bottom: 1px solid var(--color-secundario);
+    border-bottom: 0.063em solid var(--color-secundario);
 }
 .barra-logo{
     height: 100%;
+    width: 10%;
 }
 .barra-logo a{
     height: 100%;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
 .barra-logo img{
     height: 100%;
-    display: inline-block;
 }
 .barra-buscador{
     background-color: var(--color-secundario);
     display: flex;
     width: 40%; 
-    height: 80%;
+    height: 65%;
     border-radius: 9999px;
     align-items: center;
 }
@@ -42,7 +44,7 @@
     border: none;   
 }
 .barra-buscador input{
-    flex:1; /* el basic = 0 , el grow = 1 y el shirnk 1*/
+    width: 85%;
     background-color: transparent;
     padding: 0;
     height: 100%;
@@ -50,9 +52,9 @@
 }
 .barra-buscador button{
     background-color: var(--color-principal);
-    border-radius: 50%;
-    width: 10%;
-    height: 90%;
+    border-radius: 9999px;
+    width: 15%;
+    height: 100%;
     cursor: pointer;
     transition: transform 0.5s ease;
 }
@@ -60,8 +62,8 @@
     transform : scale(1.15);
 }
 input::placeholder {
-    color: black;
-    font-size: 80%;
+    color: #1A1A18;
+    font-size: 1.2em;
 }
 form input:focus {
     outline: none;
@@ -91,32 +93,59 @@ form input:focus {
     background-color: var(--color-secundario);
     color: var(--color-principal);
 }
-.buscador-carrito span{
+.buscador-carrito p{
     position: absolute;
+    display: flex;
     font-weight: bold;
-    top: 10%;
+    top: 15%;
     bottom: 0;
-    left: 60%;
+    left: 70%;
     right: 0;
-    font-size: clamp(7px,7px,7px);
+    font-size: 1em;
 }
 /*-------------------------------------------*/
+
+/*------------------NAV-------------------*/
+.navbar{
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-bottom: 0.063em solid var(--color-secundario);
+}
+.navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 10%;
+    width: 100%;
+    height: 100%;
+ 
+}
+.navbar ul li a{
+    text-decoration: none;
+}
+.navbar ul li a:hover{
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+}
+/*-------------------------------------------*/
+
 /*------------------FOOTER-------------------*/
 .pie-pagina{
     width: 100%;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     padding: 1.5% 3%;
     background-color: black;
-    border-top: 1px solid var(--color-secundario);
-    border-bottom: 1px solid var(--color-secundario);
+    border-top: 0.063em solid var(--color-secundario);
+    border-bottom: 0.063em solid var(--color-secundario);
     align-items:flex-start;
-    height: 60%;
 }
 .pie-pagina ul{
     padding: 0;
 }
-/*-Div del footer inferior-*/
+/*-Div del footer SUPERIOR-*/
 .pie-pagina-contenido{
     width: 100%;
     display: flex;
@@ -128,10 +157,12 @@ form input:focus {
 .pie-pagina-inferior{
     width: 100%;
     height: 15%; 
+    margin-top: 1em;
+    padding-top: 0.5em;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-top: 1px solid var(--color-secundario);
+    border-top: 0.063em solid var(--color-secundario);
 }
 .pie-pagina-inferior p{
     font-size: 75%;
@@ -150,7 +181,7 @@ form input:focus {
     width: 100%;
     margin-top: 3%;
     padding-top: 8%;
-    border-top: 2px solid #e7c50c;
+    border-top: 0.063em solid #e7c50c;
     height: 85%;
 }
 .pie-pagina-nosotros-miembros ul{
@@ -158,14 +189,15 @@ form input:focus {
     width: 100%;
     flex-wrap: wrap;
     height: 100%;
+    gap: 0.5em;
 
 }
 .pie-pagina-nosotros-miembros ul li{
     display: flex;
     width: 100%;
     height: 25%;
-    align-items: center;
-    font-size: 100%;
+    align-items: flex-start;
+    font-size: 0.8em;
     gap: 5%;
 }
 .pie-pagina-nosotros-miembros ul li i{
@@ -179,11 +211,12 @@ form input:focus {
     height: 100%;
     display: flex;
     flex-direction: column;
+    gap: 1em;
 }
 .pie-pagina-navegacion h4{
     width: 100%;
     height: 20%;
-    font-size: 100%;
+    font-size: 0.8em;
 }
 .pie-pagina-navegacion-soporte,
 .pie-pagina-navegacion-legal{
@@ -194,11 +227,11 @@ form input:focus {
 .pie-pagina-navegacion-legal ul{
     width: 100%;
     height: 80%;
-    border-top: 2px solid #e7c50c;
-    font-size: 80%;
+    border-top: 0.063em solid #e7c50c;
+    font-size: 0.5em;
     display:flex;
     flex-direction: column;
-    gap: 5%;
+    gap: 1em;
     padding-top: 8%;
 
 }
@@ -221,7 +254,7 @@ form input:focus {
     width: 100%;
     margin-top: 3%;
     padding-top: 8%;
-    border-top: 2px solid #e7c50c;
+    border-top: 0.063em solid #e7c50c;
     height: 85%;
 }
 .pie-pagina-redes-lista ul{
@@ -258,6 +291,29 @@ form input:focus {
 
 /*--------------------------------------*/
 
+/*---------------MAIN-------------------*/
+.main__seccion1{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+    padding: 0 2em;
+    height: auto;
+}
+.main__seccion1 img{
+
+}
+.main__seccion2{
+    display: flex;
+    width: 100%;
+    padding: 2em 2em;
+    justify-content: space-around;
+}
+.main__seccion2 img{
+    width: 50%;
+}
+/*--------------------------------------*/
+
 :root {
   --color-principal: #122f87;
   --color-principalDegradado: #090b35;
@@ -265,3 +321,4 @@ form input:focus {
   --color-secundarioDegradado: #99840a;
   --color-texto: #f4f4f4;
 }
+
