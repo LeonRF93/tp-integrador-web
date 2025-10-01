@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inscripcion</title>
-  <link rel="stylesheet" href="../css/styles.css">
-  <link rel="stylesheet" href="../css/stylesSignUpCompany.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="../css/footer.css">
-  <link rel="stylesheet" href="../css/header.css">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripcion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/succes.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body>
-<!-------------------BARRA DE LA PAGINA ------------->
+
+    <!-------------------BARRA DE LA PAGINA ------------->
     <header class="barra">
         <!----Logo de Pagina---->
         <div class="barra-logo">
-            <a href="homePage.html"><img src="../img/iconoPage.png" alt="Logo Team Queso"></a>
+            <a href="../index.html"><img src="../img/iconoPage.png" alt="Logo Team Queso"></a>
         </div>
         <!---------------------->
 
@@ -59,11 +65,8 @@
     <!----------------NAVEGADOR------------------>
     <nav class="navbar">
         <ul>
-            <li><a href="">Inicio</a></li>
-            <li><a href="">Fin</a></li>
-            <li><a href="">Adios</a></li>
-            <li><a href="">Contacto</a></li>
-            <li><a href="">NT</a></li>
+            <li><a href="./contact.html">Contacto</a></li>
+            <li><a href="./giftcard.html">Giftcard</a></li>
             <li><a href="./calendar.html">Calendario</a></li>
 
         </ul>
@@ -73,113 +76,18 @@
 
 
 
+    <main>
+        <h1>Alumnos inscritos correctamente<br></h1>
+        <div class="a"><a href="../index.html">Volver al inicio</a></div>
+    </main>
 
 
 
 
-<div class="container">
-  <form class="form" method="get" action="succesSignUp.html">
-    <h1 class="form__title">TITULO CURSO</h1>
-    <p class="form__subtitle">INSCRIPCION</p>
-    <section class="personas">
-
-      <!--Persona 1-->
-      <article class="person" data-person-index="1">
-        <header class="person__header">
-          <span class="person__index">Persona 1</span>
-          <button type="button" class="btn btn--remove">
-            <i class="fa-solid fa-minus"></i>
-          </button>
-        </header>
-
-        <div class="person__row">
-          <label class="field">
-            <span class="field__label">Nombre</span>
-            <input class="field__input" type="text" name="persona1_nombre" placeholder="Nombre">
-          </label>
-
-          <label class="field">
-            <span class="field__label">Apellido</span>
-            <input class="field__input" type="text" name="persona1_apellido" placeholder="Apellido">
-          </label>
-
-          <label class="field">
-            <span class="field__label">DNI</span>
-            <input class="field__input" type="text" name="persona1_dni" placeholder="DNI">
-          </label>
-        </div>
-      </article>
-
-      <!--Persona 2-->
-      <article class="person" data-person-index="2">
-        <header class="person__header">
-          <span class="person__index">Persona 2</span>
-          <button type="button" class="btn btn--remove">
-            <i class="fa-solid fa-minus"></i>
-          </button>
-        </header>
-
-        <div class="person__row">
-          <label class="field">
-            <span class="field__label">Nombre</span>
-            <input class="field__input" type="text" name="persona2_nombre" placeholder="Nombre">
-          </label>
-
-          <label class="field">
-            <span class="field__label">Apellido</span>
-            <input class="field__input" type="text" name="persona2_apellido" placeholder="Apellido">
-          </label>
-
-          <label class="field">
-            <span class="field__label">DNI</span>
-            <input class="field__input" type="text" name="persona2_dni" placeholder="DNI">
-          </label>
-        </div>
-      </article>
-
-      <!--Persona3-->
-      <article class="person" data-person-index="3">
-        <header class="person__header">
-          <span class="person__index">Persona 3</span>
-          <button type="button" class="btn btn--remove">
-            <i class="fa-solid fa-minus"></i>
-          </button>
-        </header>
-
-        <div class="person__row">
-          <label class="field">
-            <span class="field__label">Nombre</span>
-            <input class="field__input" type="text" name="persona3_nombre" placeholder="Nombre">
-          </label>
-
-          <label class="field">
-            <span class="field__label">Apellido</span>
-            <input class="field__input" type="text" name="persona3_apellido" placeholder="Apellido">
-          </label>
-          <label class="field">
-            <span class="field__label">DNI</span>
-            <input class="field__input" type="text" name="persona3_dni" placeholder="DNI">
-          </label>
-        </div>
-      </article>
-
-    </section>
-    <button type="button" class="btn btn--add"> Agregar Persona</button>
-
-    <div class="form__total">
-      <p class="form__total-label">Total a pagar:</p>
-      <p class="form__total-amount">$6000</p>
-    </div>
-
-    <div class="form__submit">
-      <button type="submit" class="btn" id="btn--inscribirse">INSCRIBIRSE</button>
-    </div>
- </form> 
-</div>
 
 
 
-<!---------------Pie de pagina-------------->
+    <!---------------Pie de pagina-------------->
     <footer class="pie-pagina">
 
         <div class="pie-pagina-contenido">
@@ -239,10 +147,6 @@
         </div>
 
     </footer>
-
-
-
-
-
 </body>
+
 </html>
