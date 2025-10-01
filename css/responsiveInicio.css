@@ -6,27 +6,22 @@
 
     /* HEADER*/
     .barra {
-        flex-direction: flex;
         flex-wrap: wrap;
         height: auto;
-        padding: 2% 5%;
+        padding: 1em 2em;
     }
 
     .barra-logo {
         height: 3.125em;
         width: 50%;
-        display: flex;
-    }
 
-    .barra-logo img {
-        height: 100%;
-        width: auto;
     }
 
     .barra-buscador {
         width: 100%;
         height: 2.5em;
         order: 2;
+        margin-top: 1em;
     }
 
     .barra-buscador form {
@@ -36,29 +31,31 @@
     .barra-buscador input {
         font-size: 1em;
     }
+    input::placeholder {
+    font-size: 1em;
+    }
 
     .barra-buscador button {
         width: 15%;
     }
 
     .buscador-carrito {
+        height: auto;
         width: 50%;
-        height: 100%;
         order: 1;
         justify-content: flex-end;
     }
 
-    .buscador-carrito i {
+    .buscador-carrito a i {
         font-size: 1.5em;
     }
 
     .buscador-carrito a {
-        width: 33%;
         height: 3.125em;
     }
 
     .buscador-carrito a span {
-        font-size: 0.75em;
+        font-size: 1.2em;
         top: 12%;
         left: 70%;
     }
@@ -72,7 +69,6 @@
 
     .pie-pagina-contenido {
         flex-direction: column;
-        height: auto;
         gap: 1em;
     }
 
@@ -183,50 +179,46 @@
     }
 
     /*Seccion 2*/
-    .proceso-inscripcion {
+    .main_seccion2 {
         padding: 2em 1em;
     }
 
-    .proceso-inscripcion-titulo {
+    .main_seccion2__texto {
         margin-bottom: 2em;
     }
 
-    .proceso-inscripcion-titulo h2 {
+    .main_seccion2__texto h2 {
         font-size: 1.8em;
         margin-bottom: 0.5em;
         padding: 0 0.5em;
     }
 
-    .proceso-inscripcion-titulo p {
+    .main_seccion2__texto p {
         font-size: 1em;
         width: 95%;
         line-height: 1.4;
         padding: 0 0.5em;
     }
 
-    .proceso-inscripcion-pasos {
+    .main_seccion2__contenido {
         margin: 0;
         gap: 1.5em;
         flex-direction: column;
         align-items: center;
     }
 
-    .proceso-paso {
-        width: 100%;
-        max-width: 320px;
+    .paso-card {
+        width: 90%;
         padding: 1.5em 1em;
-        margin: 0 auto;
     }
 
-    .paso-numero {
+    .paso-card-numero {
         width: 1.5em;
         height: 1.5em;
         font-size: 1.2em;
-        left: 44%;
-        top: -0.8em;
     }
 
-    .paso-icono {
+    .paso-card-icono {
         font-size: 2.5em;
         margin-bottom: 0.3em;
     }
@@ -361,6 +353,21 @@
         font-size: 90%;
     }
 
+    /*Header*/
+    .barra {
+        height: 2.8em;
+    }
+
+    input::placeholder {
+        font-size: 0.6em;
+    }
+
+    .buscador-carrito a span {
+        top: 7%;
+        left: 78%;
+        font-size: 0.6em;
+    }
+
     /*Seccion 1*/
     .main__seccion1 {
         padding: 0 1.5em;
@@ -405,38 +412,46 @@
     .main_seccion2 {
         padding: 3em 1.5em;
     }
+
     .main_seccion2__contenido {
         width: 100%;
         padding: 1.8em 1.2em;
         margin: 0;
         justify-content: space-between;
     }
+
     .main_seccion2__texto h2 {
         font-size: 1.5em;
         margin-bottom: 0.5em;
     }
+
     .main_seccion2__texto p {
         font-size: 1.2em;
         width: 100%;
     }
+
     .paso-card {
         width: 45%;
         padding: 1em;
     }
+
     .paso-card-numero {
         width: 1.6em;
         height: 1.6em;
         font-size: 1.3em;
         left: 44%;
     }
+
     .paso-card-icono {
         font-size: 3em;
         margin-bottom: 0.3em;
     }
+
     .paso-contenido h3 {
         font-size: 1.3em;
         margin-bottom: 0.5em;
     }
+
     .paso-contenido p {
         font-size: 0.9em;
         line-height: 1.4;
@@ -532,4 +547,27 @@
         font-size: 0.9em;
     }
 
+    /*Footer*/
+    .pie-pagina-nosotros,
+    .pie-pagina-navegacion,
+    .pie-pagina-redes {
+        width: 20%;
+    }
+
+    .pie-pagina-redes h4,
+    .pie-pagina-nosotros h4 {
+        font-size: 0.8em;
+    }
+
+    .pie-pagina-nosotros-miembros ul li {
+        font-size: 0.6em;
+    }
+
+    .pie-pagina-redes-lista ul li {
+        font-size: 0.8em;
+    }
+
+    .pie-pagina-inferior p {
+        font-size: 0.5em;
+    }
 }
