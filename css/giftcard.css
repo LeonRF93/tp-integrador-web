@@ -18,7 +18,7 @@
     /* siempre cuadrado */
     margin-top: 5%;
     width: 11em;
-    background: lightblue;
+    background: darkgray;
 }
 
 .titulos {
@@ -45,6 +45,16 @@
 .form__titulos {
     text-align: center;
     font-weight: bold;
+}
+
+
+/* ---------------------- RADIOS ---------------------- */
+
+.labelRadio__p {
+    user-select: none;
+    font-size: 50%;
+    margin-bottom: 20%;
+    color: gray;
 }
 
 .form__radioWrap {
@@ -91,36 +101,65 @@
     background-color: var(--color-secundario)
 }
 
-
-
-.labelRadio__color {
+.labelRadio__color,
+.labelRadio__ubicacion,
+.labelRadio__background {
+    border: 1px lightgray solid;
     width: 1.2em;
     height: 1.2em;
     border-radius: 50%;
 }
 
-.labelRadio__color--azul{
+.labelRadio__ubicacion,
+.labelRadio__background  {
+    border-radius: 0;
+    background-size: cover;
+}
+
+.labelRadio__color--azul {
     background-color: var(--color-principal)
 }
-.labelRadio__color--azul2{
+
+.labelRadio__color--azul2 {
     background-color: var(--color-principalDegradado)
 }
-.labelRadio__color--amarillo{
+
+.labelRadio__color--amarillo {
     background-color: var(--color-secundario)
 }
-.labelRadio__color--amarillo2{
+
+.labelRadio__color--amarillo2 {
     background-color: var(--color-secundarioDegradado)
 }
-.labelRadio__color--blanco{
+
+.labelRadio__color--blanco {
     background-color: var(--color-texto)
 }
 
-.labelRadio__p {
-    user-select: none;
-    font-size: 50%;
-    margin-bottom: 20%;
-    color: gray;
+.labelRadio__ubicacion--upRight {
+    background-image: url(../img/upRight.png);
 }
+
+.labelRadio__ubicacion--upLeft {
+    background-image: url(../img/upLeft.png);
+}
+
+.labelRadio__ubicacion--downRight {
+    background-image: url(../img/downRight.png);
+}
+
+.labelRadio__background--cr {
+    background-image: url(../img/crfondo.png);
+}
+.labelRadio__background--tq {
+    background-image: url(../img/teamquesoBG.jpg);
+}
+.labelRadio__background--queso {
+    background-image: url(../img/cheese.jpg);
+}
+
+/* ---------------------- RADIOS ---------------------- */
+
 
 .form__monto {
     height: 1.2em;
@@ -171,7 +210,7 @@
         justify-content: center;
     }
 
-    .article__vistaPrevia--cell .titulos{
+    .article__vistaPrevia--cell .titulos {
         font-size: 1rem;
     }
 }
