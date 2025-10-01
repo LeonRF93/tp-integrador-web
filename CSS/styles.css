@@ -8,7 +8,7 @@ body{
     letter-spacing: 0.04em;
     line-height: 1.5em; 
     color: var(--color-texto);
-    height: 100vh;
+    height: auto;
     background: radial-gradient(circle, var(--color-principal), var(--color-principalDegradado));
 }
 
@@ -18,7 +18,7 @@ a{
 
 header{
     font-size: 50%;
-    height: 15%;
+    height: 20em;
     border-bottom: 1px solid var(--color-secundario);
 }
 
