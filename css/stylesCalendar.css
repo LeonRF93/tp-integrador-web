@@ -120,3 +120,8 @@
 .calendar__day .event:hover{
   background-color: var(--color-secundario);
 }
+
+
+.calendar__day a {
+  text-decoration: none;
+}
