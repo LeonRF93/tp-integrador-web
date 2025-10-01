@@ -12,29 +12,24 @@
 
 </head>
 <body>
+
 <!-------------------BARRA DE LA PAGINA ------------->
     <header class="barra">
         <!----Logo de Pagina---->
         <div class="barra-logo">
-            <a href="homePage.html"><img src="../img/iconoPage.png" alt="Logo Team Queso"></a>
+            <a href="../index.html"><img src="./img/iconoPage.png" alt="Logo Team Queso"></a>
         </div>
         <!---------------------->
 
         <!---Barra de busqueda--->
         <div class="barra-buscador">
-            <form action="/buscar" method="get" autocomplete="off" id="search-form">
+            <form action="" method="get" autocomplete="off" id="search-form">
                 <input type="search" name="Buscador" id="buscador" list="cursos" placeholder="Buscar cursos...">
                 <datalist id="cursos">
-                    <option value="Java Developer Professional">
                     <option value="Python & Data Science">
-                    <option value="SQL Master: Bases de Datos">
-                    <option value="JavaScript Moderno">
-                    <option value="React.js desde Cero">
-                    <option value="Node.js Backend">
-                    <option value="Diseño UX/UI">
-                    <option value="Machine Learning">
-                    <option value="DevOps Fundamentals">
-                    <option value="Mobile Apps con Flutter">
+                    <option value="HTML">
+                    <option value="JAVA"></option>
+
                 </datalist>
                 <!--Boton busqueda-->
                 <button type="submit" aria-label="Buscar">
@@ -47,7 +42,7 @@
 
         <!---Carrito--->
         <div class="buscador-carrito">
-            <a href="/carrito" aria-label="Carrito de compras">
+            <a href="./index.html" aria-label="Carrito de compras">
                 <i class="fa-solid fa-cart-shopping"></i>
                 <span>1</span>
             </a>
@@ -55,25 +50,16 @@
         <!------------->
     </header>
     <!------------------------------------------------>
-
     <!----------------NAVEGADOR------------------>
     <nav class="navbar">
         <ul>
-            <li><a href="">Inicio</a></li>
-            <li><a href="">Fin</a></li>
-            <li><a href="">Adios</a></li>
-            <li><a href="">Contacto</a></li>
-            <li><a href="">NT</a></li>
+            <li><a href="./contact.html">Contacto</a></li>
+            <li><a href="./giftcard.html">Giftcard</a></li>
             <li><a href="./calendar.html">Calendario</a></li>
 
         </ul>
     </nav>
     <!------------------------------------------------>
-
-
-
-
-
 
 
 
@@ -168,7 +154,7 @@
 
     <div class="form__total">
       <p class="form__total-label">Total a pagar:</p>
-      <p class="form__total-amount">$6000</p>
+      <p class="form__total-amount">$0.00</p>
     </div>
 
     <div class="form__submit">
