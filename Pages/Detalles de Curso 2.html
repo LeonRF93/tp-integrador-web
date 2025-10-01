@@ -15,8 +15,46 @@
 </head>
 
 <body>
-    <header>
-        <h1 class="h1">Header insano </h1>
+    <header class="barra">
+        <!----Logo de Pagina---->
+        <div class="barra-logo">
+            <a href="homePage.html"><img src="../img/iconoPage.png" alt="Logo Team Queso"></a>
+        </div>
+        <!---------------------->
+
+        <!---Barra de busqueda--->
+        <div class="barra-buscador">
+            <form action="/buscar" method="get" autocomplete="off" id="search-form">
+                <input type="search" name="Buscador" id="buscador" list="cursos" placeholder="Buscar cursos...">
+                <datalist id="cursos">
+                    <option value="Java Developer Professional">
+                    <option value="Python & Data Science">
+                    <option value="SQL Master: Bases de Datos">
+                    <option value="JavaScript Moderno">
+                    <option value="React.js desde Cero">
+                    <option value="Node.js Backend">
+                    <option value="Diseño UX/UI">
+                    <option value="Machine Learning">
+                    <option value="DevOps Fundamentals">
+                    <option value="Mobile Apps con Flutter">
+                </datalist>
+                <!--Boton busqueda-->
+                <button type="submit" aria-label="Buscar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <!------------------>
+            </form>
+        </div>
+        <!-------------------->
+
+        <!---Carrito--->
+        <div class="buscador-carrito">
+            <a href="/carrito" aria-label="Carrito de compras">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>1</span>
+            </a>
+        </div>
+        <!------------->
     </header>
     <main>
         <section>
