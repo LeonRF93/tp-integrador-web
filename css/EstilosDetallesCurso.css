@@ -83,6 +83,11 @@ h2 {
     border-color: var(--color-secundarioDegradado);
     font-size: 85%;
     cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+.boton:hover {
+    background-color: var(--color-secundarioDegradado);
+    cursor: pointer;
 }
 
 .contenedorCompra {
@@ -125,6 +130,43 @@ h2 {
 }
 .objetivo__lista--espacio{
     margin: 1em 0;
+}
+.profesor{
+    width: 100%;
+    height: auto;
+    margin-bottom: 2em;
+}
+.profesor__descripcion{
+    display: flex;
+    flex-direction: row;
+    padding: 2em 1em;
+    background-color: var(--color-principalDegradado);
+    border-radius: 1em;
+}
+.profesor__descripcion--imagen{
+    height: auto;
+    width: auto;
+}
+.profesor__descripcion--detalles{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+.detalles__nombre{
+    width: 100%;
+    height: 3em;
+}
+.detalles__valoracion{
+    width: 100%;
+    height: 2em;
+}
+.detalles__texto{
+    height: auto;
+    width: 100%;
+}
+.perfil{
+    height: 10em;
+    width: 8em;
 }
 
 .contenedoresInfo__infoSecundaria {
@@ -172,7 +214,7 @@ h2 {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 70%;
+    height: auto;
 }
 .programa__niveles{
     display: flex;
@@ -242,6 +284,19 @@ h2 {
     .contenedoresInfo{
         flex-direction: column;
         height: auto;
+    }
+    .profesor__descripcion{
+        flex-direction: column;
+    }
+    .profesor__descripcion--imagen{
+        display: flex;
+        justify-content: center;
+        height: auto;
+        width: 100%;
+    }  
+    .perfil{
+        width: 15em;
+        height: 20em;
     }
     .contenedoresInfo__infoSecundaria{
         width: 100%;
