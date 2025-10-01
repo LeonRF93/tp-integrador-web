@@ -6,6 +6,9 @@
     height: 100%;
 }
 
+
+/* ---------------------- VISTA PREVIA ---------------------- */
+
 .vistaPrevia__cardWrap {
     height: 80%;
     display: flex;
@@ -21,19 +24,17 @@
     background: darkgray;
 }
 
+
+/* ---------------------- VISTA PREVIA ---------------------- */
+
 .titulos {
     text-align: center;
     font-weight: bold;
     padding: 1%;
 }
 
-.main__vistaPrevia {
-    width: 40%;
-    border: solid 1px red;
-}
-
 .form {
-    box-shadow: 5px 10px 0.8em black;
+    box-shadow: 5px 0px 0.8em black;
     padding: 0px 1em 1em;
     display: flex;
     flex-direction: column;
@@ -161,7 +162,9 @@
 /* ---------------------- RADIOS ---------------------- */
 
 
-.form__monto {
+/* ---------------------- TEXTOS (monto y destinatario) ---------------------- */
+
+.form__texto {
     height: 1.2em;
     display: flex;
     justify-content: center;
@@ -170,9 +173,12 @@
     font-weight: bold;
 }
 
-.monto__input {
+.texto__input {
     width: 50%;
 }
+
+/* ---------------------- TEXTOS (monto y destinatario) ---------------------- */
+
 
 .form__button {
     cursor: pointer;
