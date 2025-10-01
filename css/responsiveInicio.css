@@ -1,0 +1,393 @@
+/* --- -------CELUS----------- ---*/
+@media (max-width: 480px) {
+    body {
+        font-size: 0.875em;
+    }
+
+    /*Seccion 1*/
+    .main__seccion1__banner1 {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5em;
+        padding-bottom: 3em;
+    }
+
+    .main__seccion1-info h1 {
+        font-size: 1.3em;
+    }
+
+    .main__seccion1-info p {
+        font-size: 1em;
+        line-height: 1.3;
+    }
+
+    .main__seccion1-info {
+        padding: 0.8em;
+    }
+
+    .main__seccion1-foto {
+        order: 1;
+        padding: 1em 3em 0 3em;
+    }
+
+    .main__seccion1-foto img {
+        height: 20em;
+    }
+
+    .main__seccion1-contenido {
+        gap: 0.8em;
+        padding: 0 0.5em;
+        flex-direction: row;
+        width: 100%;
+        order: 2;
+    }
+
+    /*Seccion 2*/
+    .main_seccion2 {
+        padding: 2em 1em;
+    }
+
+    .main_seccion2__texto {
+        margin-bottom: 2em;
+    }
+
+    .main_seccion2__texto h2 {
+        font-size: 1.8em;
+        margin-bottom: 0.5em;
+        padding: 0 0.5em;
+    }
+
+    .main_seccion2__texto p {
+        font-size: 1em;
+        width: 95%;
+        line-height: 1.4;
+        padding: 0 0.5em;
+    }
+
+    .main_seccion2__contenido {
+        margin: 0;
+        gap: 1.5em;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .paso-card {
+        width: 90%;
+        padding: 1.5em 1em;
+    }
+
+    .paso-card-numero {
+        width: 1.5em;
+        height: 1.5em;
+        font-size: 1.2em;
+    }
+
+    .paso-card-icono {
+        font-size: 2.5em;
+        margin-bottom: 0.3em;
+    }
+
+    .paso-contenido h3 {
+        font-size: 1.2em;
+        margin-bottom: 0.5em;
+    }
+
+    .paso-contenido p {
+        font-size: 0.85em;
+        line-height: 1.4;
+    }
+
+    /*Seccion 3*/
+    .main__seccion3 {
+        padding: 1em 0.5em;
+    }
+
+    .main__seccion3__texto {
+        margin-bottom: 2em;
+    }
+
+    .main__seccion3__texto h2 {
+        font-size: 2em;
+        padding: 0 0.5em;
+    }
+
+    .main__seccion3__texto p {
+        width: 95%;
+        font-size: 1em;
+        line-height: 1.2;
+    }
+
+    .main__seccion3__cards {
+        gap: 1em;
+        padding: 0 0.7em;
+    }
+
+    .curso-card {
+        width: 100%;
+    }
+
+    .curso-card__imagen {
+        height: 15em;
+    }
+
+    .curso-card__contenido {
+        padding: 1em;
+    }
+
+    .curso-card__contenido h3 {
+        font-size: 1.1em;
+        margin-bottom: 0.6em;
+    }
+
+    .curso-card__contenido p {
+        font-size: 0.85em;
+        line-height: 1.4;
+    }
+
+    .curso-card__duracion,
+    .curso-card__precio {
+        padding: 0.5em 1em;
+    }
+
+    .curso-card__duracion span {
+        font-size: 0.9em;
+    }
+
+    .curso-card__precio {
+        font-size: 1.2em;
+    }
+
+    .curso-card__botones {
+        flex-direction: column;
+        gap: 0.5em;
+        padding: 0.8em;
+    }
+
+    .curso-card__botones button,
+    .curso-card__botones a {
+        width: 100%;
+        padding: 12px 16px;
+        font-size: 0.9em;
+    }
+
+    /*Seccion 4*/
+    .main__seccion4 {
+        padding: 2em 1em;
+    }
+
+    .main__seccion4__texto {
+        margin-bottom: 2em;
+    }
+
+    .main__seccion4__texto h2 {
+        font-size: 1.7em;
+        margin-bottom: 0.5em;
+    }
+
+    .main__seccion4__texto p {
+        width: 90%;
+        font-size: 0.95em;
+        line-height: 1.5;
+    }
+
+    .main__seccion4__metodos {
+        gap: 1em;
+        margin: 0;
+    }
+
+    .metodos-carta {
+        width: 40%;
+        padding: 1.5em 1em;
+        margin-bottom: 0.5em;
+    }
+
+    .metodos-carta i {
+        font-size: 2.2em;
+        margin-bottom: 0.3em;
+    }
+
+    .metodos-carta span {
+        font-size: 0.9em;
+    }
+}
+
+/* --- TABLETS ---*/
+@media (min-width: 481px) and (max-width: 768px) {
+    body {
+        font-size: 90%;
+    }
+    /*Seccion 1*/
+    .main__seccion1__banner1 {
+        align-items: center;
+        gap: 0.5em;
+    }
+
+    .main__seccion1-contenido {
+        width: 55%;
+        padding: 1em 0.5em;
+    }
+
+    .main__seccion1-info {
+        padding: 1.2em;
+    }
+
+    .main__seccion1-info h1 {
+        font-size: 1.4em;
+        line-height: 1.3;
+        margin-bottom: 0.4em;
+    }
+
+    .main__seccion1-info p {
+        font-size: 0.95em;
+        line-height: 1.5;
+    }
+
+    .main__seccion1-foto {
+        width: 45%;
+        height: 100%;
+        padding: 1em 0;
+    }
+
+    .main__seccion1-foto img {
+        max-width: 100%;
+    }
+
+    /*Seccion 2*/
+    .main_seccion2 {
+        padding: 3em 1.5em;
+    }
+
+    .main_seccion2__contenido {
+        width: 100%;
+        padding: 1.8em 1.2em;
+        margin: 0;
+        justify-content: space-between;
+    }
+
+    .main_seccion2__texto h2 {
+        font-size: 1.5em;
+        margin-bottom: 0.5em;
+    }
+
+    .main_seccion2__texto p {
+        font-size: 1.2em;
+        width: 100%;
+    }
+
+    .paso-card {
+        width: 45%;
+        padding: 1em;
+    }
+
+    .paso-card-numero {
+        width: 1.6em;
+        height: 1.6em;
+        font-size: 1.3em;
+        left: 44%;
+    }
+
+    .paso-card-icono {
+        font-size: 3em;
+        margin-bottom: 0.3em;
+    }
+
+    .paso-contenido h3 {
+        font-size: 1.3em;
+        margin-bottom: 0.5em;
+    }
+
+    .paso-contenido p {
+        font-size: 0.9em;
+        line-height: 1.4;
+    }
+
+    /*Seccion 3*/
+    .main__seccion3 {
+        padding: 1.5em 1.5em;
+    }
+
+    .main__seccion3__texto h2 {
+        font-size: 2em;
+        margin-bottom: 0.5em;
+    }
+
+    .main__seccion3__texto p {
+        width: 85%;
+        font-size: 1em;
+        line-height: 1.5;
+    }
+
+    .main__seccion3__cards {
+        padding: 0;
+    }
+
+    .curso-card {
+        width: 45%;
+    }
+
+    .curso-card__contenido {
+        padding: 1.2em;
+    }
+
+    .curso-card__contenido h3 {
+        font-size: 1.2em;
+    }
+
+    .curso-card__contenido p {
+        font-size: 0.9em;
+    }
+
+    .curso-card__duracion,
+    .curso-card__precio {
+        padding: 0.8em 1.2em;
+    }
+
+    .curso-card__precio {
+        font-size: 1.3em;
+    }
+
+    .curso-card__botones {
+        padding: 0.8em;
+        gap: 0.8em;
+    }
+
+    .curso-card__botones button,
+    .curso-card__botones a {
+        padding: 10px 16px;
+        font-size: 0.9em;
+    }
+
+    /*Seccion 4*/
+    .main__seccion4 {
+        padding: 2.5em 1.5em;
+    }
+
+    .main__seccion4__texto h2 {
+        font-size: 2em;
+        margin-bottom: 0.5em;
+    }
+
+    .main__seccion4__texto p {
+        width: 70%;
+        font-size: 1em;
+        line-height: 1.5;
+    }
+
+    .main__seccion4__metodos {
+        margin: 0 1em;
+    }
+
+    .metodos-carta {
+        width: 45%;
+        padding: 1.2em 0.8em;
+    }
+
+    .metodos-carta i {
+        font-size: 2.5em;
+        margin-bottom: 0.4em;
+    }
+
+    .metodos-carta span {
+        font-size: 0.9em;
+    }
+}
