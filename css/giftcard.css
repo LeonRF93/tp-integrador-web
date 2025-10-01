@@ -24,6 +24,36 @@
     background: darkgray;
 }
 
+.background__p {
+    height: 75%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.background__montoWrap{
+    text-align: right;
+}
+
+.montoWrap__p{
+    display: inline-block;
+    background-color: rgb(16, 12, 0);
+}
+
+.pWrap__p {
+    width: 3.5em;
+    background-color: black;
+}
+
+.background__p--titulo {
+    font-size: .4em;
+}
+
+.background__p--nombre {
+    font-weight: bold;
+}
+
 
 /* ---------------------- VISTA PREVIA ---------------------- */
 
@@ -112,7 +142,7 @@
 }
 
 .labelRadio__ubicacion,
-.labelRadio__background  {
+.labelRadio__background {
     border-radius: 0;
     background-size: cover;
 }
@@ -152,9 +182,11 @@
 .labelRadio__background--cr {
     background-image: url(../img/crfondo.png);
 }
+
 .labelRadio__background--tq {
     background-image: url(../img/teamquesoBG.jpg);
 }
+
 .labelRadio__background--queso {
     background-image: url(../img/cheese.jpg);
 }
