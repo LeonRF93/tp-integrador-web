@@ -211,6 +211,9 @@
 
 /* ---------------------- TEXTOS (monto y destinatario) ---------------------- */
 
+.form_email{
+    width: 100%;
+}
 
 .form__button {
     cursor: pointer;
