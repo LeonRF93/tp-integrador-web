@@ -5,10 +5,6 @@
 h2 {
     color: var(--color-secundario);
 }
-.fondo{
-    
-}
-
 .contenedoresPresentacion {
     display: flex;
     flex-direction: row;
