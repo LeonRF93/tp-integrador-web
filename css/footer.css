@@ -100,11 +100,21 @@
 
 }
 
+.pie-pagina-navegacion-soporte ul li a,
+.pie-pagina-navegacion-legal ul li a{
+    text-decoration: none;
+    color: inherit;
+
+}
+.pie-pagina-navegacion-soporte ul li a:hover,
+.pie-pagina-navegacion-legal ul li a:hover{
+    text-decoration:underline;
+
+}
 .pie-pagina-navegacion-soporte ul li,
 .pie-pagina-navegacion-legal ul li {
     width: 100%;
 }
-
 /*Redes Sociales*/
 .pie-pagina-redes {
     width: 15%;
