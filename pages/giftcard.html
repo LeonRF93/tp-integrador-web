@@ -15,101 +15,218 @@
 
 <body>
     <main class="main">
-        <section class="main__vistaPrevia">
-            <p class="titulos">VISTA PREVIA</p>
-        </section>
-        <section class="main__formWrap">
-            <form class="form" name="giftcard" action="#">
 
-                <p class="titulos">PERSONALIZACIÓN DE GIFTCARD</p>
+        <section class="main__section section">
 
-                <input class="form__name" type="text" name="name" placeholder="Nombre del destinatario">
-
-                <div class="form__color">
-                    <p class="form__titulos">Color</p>
-                    <div class="form__radioWrap radioWrap">
-                        <label class="radioWrap__labelRadio labelRadio">
-                            <div class="labelRadio__color"></div>
-                            <input type="radio" name="color" value="azul">
-                            <span class="labelRadio__check">
-                                <div class="labelRadio__check--clicked"></div>
-                            </span>
-                        </label>
-                        <label class="radioWrap__labelRadio labelRadio">
-                            <div class="labelRadio__color"></div>
-                            <input type="radio" name="color" value="azul">
-                            <span class="labelRadio__check">
-                                <div class="labelRadio__check--clicked"></div>
-                            </span>
-                        </label>
-                        <label class="radioWrap__labelRadio labelRadio">
-                            <div class="labelRadio__color"></div>
-                            <input type="radio" name="color" value="azul">
-                            <span class="labelRadio__check">
-                                <div class="labelRadio__check--clicked"></div>
-                            </span>
-                        </label>
-                        <label class="radioWrap__labelRadio labelRadio">
-                            <div class="labelRadio__color"></div>
-                            <input type="radio" name="color" value="azul">
-                            <span class="labelRadio__check">
-                                <div class="labelRadio__check--clicked"></div>
-                            </span>
-                        </label>
-                        <label class="radioWrap__labelRadio labelRadio">
-                            <div class="labelRadio__color"></div>
-                            <input type="radio" name="color" value="azul">
-                            <span class="labelRadio__check">
-                                <div class="labelRadio__check--clicked"></div>
-                            </span>
-                        </label>
+            <article class="article__vistaPrevia vistaPrevia">
+                <p class="titulos">VISTA PREVIA</p>
+                <div class="vistaPrevia__cardWrap cardWrap">
+                    <div class="cardWrap__card card">
+                        <div class="card__background"></div>
                     </div>
                 </div>
+            </article>
 
-                <div class="form__fontSize">
-                    <p class="form__titulos">Tamaño del texto</p>
-                    <div class="form__radioWrap radioWrap">
-                        <label class="radioWrap__labelRadio labelRadio">
-                            <p class="labelRadio__p">20px</p>
-                            <input type="radio" name="fontSize" value="azul">
-                            <span class="labelRadio__check">
-                                <div class="labelRadio__check--clicked"></div>
-                            </span>
-                        </label>
-                        <label class="radioWrap__labelRadio labelRadio">
-                            <p class="labelRadio__p">20px</p>
-                            <input type="radio" name="fontSize" value="azul">
-                            <span class="labelRadio__check">
-                                <div class="labelRadio__check--clicked"></div>
-                            </span>
-                        </label>
-                        <label class="radioWrap__labelRadio labelRadio">
-                            <p class="labelRadio__p">20px</p>
-                            <input type="radio" name="fontSize" value="azul">
-                            <span class="labelRadio__check">
-                                <div class="labelRadio__check--clicked"></div>
-                            </span>
-                        </label>
-                        <label class="radioWrap__labelRadio labelRadio">
-                            <p class="labelRadio__p">20px</p>
-                            <input type="radio" name="fontSize" value="azul">
-                            <span class="labelRadio__check">
-                                <div class="labelRadio__check--clicked"></div>
-                            </span>
-                        </label>
-                        <label class="radioWrap__labelRadio labelRadio">
-                            <p class="labelRadio__p">20px</p>
-                            <input type="radio" name="fontSize" value="azul">
-                            <span class="labelRadio__check">
-                                <div class="labelRadio__check--clicked"></div>
-                            </span>
-                        </label>
+            <article class="main__formWrap">
+                <form class="form" name="giftcard" action="#">
+
+                    <p class="titulos">PERSONALIZACIÓN</p>
+
+                    <label class="form__monto monto">
+                        <p class="form__titulos">Destinatario</p>
+                        <input class="monto__input" type="text">
+                    </label>
+
+                    <div class="form__color">
+                        <div class="form__radioWrap radioWrap">
+                            <p class="form__titulos">Color</p>
+                            <label class="radioWrap__labelRadio labelRadio">
+                                <div class="labelRadio__color labelRadio__color--azul"></div>
+                                <input type="radio" name="color" value="azul">
+                                <span class="labelRadio__check">
+                                    <div class="labelRadio__check--clicked"></div>
+                                </span>
+                            </label>
+                            <label class="radioWrap__labelRadio labelRadio">
+                                <div class="labelRadio__color labelRadio__color--azul2"></div>
+                                <input type="radio" name="color" value="azul2">
+                                <span class="labelRadio__check">
+                                    <div class="labelRadio__check--clicked"></div>
+                                </span>
+                            </label>
+                            <label class="radioWrap__labelRadio labelRadio">
+                                <div class="labelRadio__color labelRadio__color--amarillo"></div>
+                                <input type="radio" name="color" value="amarillo">
+                                <span class="labelRadio__check">
+                                    <div class="labelRadio__check--clicked"></div>
+                                </span>
+                            </label>
+                            <label class="radioWrap__labelRadio labelRadio">
+                                <div class="labelRadio__color labelRadio__color--amarillo2"></div>
+                                <input type="radio" name="color" value="amarillo2">
+                                <span class="labelRadio__check">
+                                    <div class="labelRadio__check--clicked"></div>
+                                </span>
+                            </label>
+                            <label class="radioWrap__labelRadio labelRadio">
+                                <div class="labelRadio__color labelRadio__color--blanco"></div>
+                                <input type="radio" name="color" value="blanco">
+                                <span class="labelRadio__check">
+                                    <div class="labelRadio__check--clicked"></div>
+                                </span>
+                            </label>
+                        </div>
                     </div>
-                </div> 
 
-                <button class="form__button">CONFIRMAR</button>
-            </form>
+                    <div class="form__fontSize">
+                        <p class="form__titulos">Tamaño del texto</p>
+                        <div class="form__radioWrap radioWrap">
+                            <label class="radioWrap__labelRadio labelRadio">
+                                <p class="labelRadio__p">20px</p>
+                                <input type="radio" name="fontSize" value="azul">
+                                <span class="labelRadio__check">
+                                    <div class="labelRadio__check--clicked"></div>
+                                </span>
+                            </label>
+                            <label class="radioWrap__labelRadio labelRadio">
+                                <p class="labelRadio__p">28px</p>
+                                <input type="radio" name="fontSize" value="azul">
+                                <span class="labelRadio__check">
+                                    <div class="labelRadio__check--clicked"></div>
+                                </span>
+                            </label>
+                            <label class="radioWrap__labelRadio labelRadio">
+                                <p class="labelRadio__p">32px</p>
+                                <input type="radio" name="fontSize" value="azul">
+                                <span class="labelRadio__check">
+                                    <div class="labelRadio__check--clicked"></div>
+                                </span>
+                            </label>
+                            <label class="radioWrap__labelRadio labelRadio">
+                                <p class="labelRadio__p">48px</p>
+                                <input type="radio" name="fontSize" value="azul">
+                                <span class="labelRadio__check">
+                                    <div class="labelRadio__check--clicked"></div>
+                                </span>
+                            </label>
+                            <label class="radioWrap__labelRadio labelRadio">
+                                <p class="labelRadio__p">60px</p>
+                                <input type="radio" name="fontSize" value="azul">
+                                <span class="labelRadio__check">
+                                    <div class="labelRadio__check--clicked"></div>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <label class="form__monto monto">
+                        <p class="form__titulos">Monto $</p>
+                        <input class="monto__input" type="number">
+                    </label>
+
+                    <div class="form__color">
+                        <div class="form__radioWrap radioWrap">
+                            <p class="form__titulos">Color</p>
+                            <label class="radioWrap__labelRadio labelRadio">
+                                <div class="labelRadio__color"></div>
+                                <input type="radio" name="color" value="azul">
+                                <span class="labelRadio__check">
+                                    <div class="labelRadio__check--clicked"></div>
+                                </span>
+                            </label>
+                            <label class="radioWrap__labelRadio labelRadio">
+                                <div class="labelRadio__color"></div>
+                                <input type="radio" name="color" value="azul">
+                                <span class="labelRadio__check">
+                                    <div class="labelRadio__check--clicked"></div>
+                                </span>
+                            </label>
+                            <label class="radioWrap__labelRadio labelRadio">
+                                <div class="labelRadio__color"></div>
+                                <input type="radio" name="color" value="azul">
+                                <span class="labelRadio__check">
+                                    <div class="labelRadio__check--clicked"></div>
+                                </span>
+                            </label>
+                            <label class="radioWrap__labelRadio labelRadio">
+                                <div class="labelRadio__color"></div>
+                                <input type="radio" name="color" value="azul">
+                                <span class="labelRadio__check">
+                                    <div class="labelRadio__check--clicked"></div>
+                                </span>
+                            </label>
+                            <label class="radioWrap__labelRadio labelRadio">
+                                <div class="labelRadio__color"></div>
+                                <input type="radio" name="color" value="azul">
+                                <span class="labelRadio__check">
+                                    <div class="labelRadio__check--clicked"></div>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form__color">
+                        <div class="form__radioWrap radioWrap">
+                            <p class="form__titulos">Ubicación</p>
+                            <label class="radioWrap__labelRadio labelRadio">
+                                <div class="labelRadio__color"></div>
+                                <input type="radio" name="color" value="azul">
+                                <span class="labelRadio__check">
+                                    <div class="labelRadio__check--clicked"></div>
+                                </span>
+                            </label>
+                            <label class="radioWrap__labelRadio labelRadio">
+                                <div class="labelRadio__color"></div>
+                                <input type="radio" name="color" value="azul">
+                                <span class="labelRadio__check">
+                                    <div class="labelRadio__check--clicked"></div>
+                                </span>
+                            </label>
+                            <label class="radioWrap__labelRadio labelRadio">
+                                <div class="labelRadio__color"></div>
+                                <input type="radio" name="color" value="azul">
+                                <span class="labelRadio__check">
+                                    <div class="labelRadio__check--clicked"></div>
+                                </span>
+                            </label>
+                            <label class="radioWrap__labelRadio labelRadio">
+                                <div class="labelRadio__color"></div>
+                                <input type="radio" name="color" value="azul">
+                                <span class="labelRadio__check">
+                                    <div class="labelRadio__check--clicked"></div>
+                                </span>
+                            </label>
+                            <label class="radioWrap__labelRadio labelRadio">
+                                <div class="labelRadio__color"></div>
+                                <input type="radio" name="color" value="azul">
+                                <span class="labelRadio__check">
+                                    <div class="labelRadio__check--clicked"></div>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+
+
+                    <button class="form__button">CONFIRMAR</button>
+                </form>
+            </article>
+
+
         </section>
+
+        <section class="main__section">
+            <article class="article__vistaPrevia--cell vistaPrevia">
+                <p class="titulos">VISTA PREVIA</p>
+                <div class="vistaPrevia__cardWrap cardWrap">
+                    <div class="cardWrap__card card">
+                        <div class="card__background"></div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+
     </main>
 </body>
 
