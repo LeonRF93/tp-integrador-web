@@ -1,0 +1,114 @@
+#calendar {
+  background: #ffffff;
+  border-radius: 2em;
+  max-width: 1200px;
+  width: 95%;
+  overflow: auto;
+  color: #000000;
+  box-shadow:  1em 1em 1em var(--color-principalDegradado);
+}
+
+.calendar_header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1em;
+  background-color: var(--color-secundario);
+  color: #000000;
+  border-radius: 1.5em 1.5em 0 0;
+}
+.calendar_header-title {
+  text-align: center;
+  font-size: 2em;
+}
+.calendar_button {
+  background-color: var(--color-principalDegradado);
+  color: var(--color-texto);
+  border: 1px solid var(--color-secundarioDegradado);
+  border-radius: 50%;
+  width: 5em;
+  height: 5em;
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.calendar_button:hover {
+  background-color: var(--color-principal);
+}
+.calendar__weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  justify-content: space-evenly;
+  font-weight: bold;
+}
+.calendar__weekdays div {
+  padding: 0.75em 0;
+}
+.calendar__days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.3em;
+  list-style: none;
+  padding: 0.5em;
+}
+.calendar__day {
+  border: 1px solid var(--color-secundario);
+  border-radius: 1em;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0.3em;
+  cursor: pointer;
+
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow: hidden;
+  
+}
+.calendar__day h4 {
+  font-size: 0.7em;
+  font-weight: lighter;
+  margin: 0;
+}
+
+.calendar__day:hover {
+  background-color: #f1f1f1;
+}
+.calendar__day.today h4{
+  background-color: var(--color-secundario);
+  display: flex;
+  height: 2em;
+  width: 2em;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+  font-weight: bold;
+  border-radius: 50%;
+}
+.calendar__day .events {
+  margin-top: 0.3em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+  width: 100%;
+}
+
+
+.calendar__day .event {
+  background-color: var(--color-principal);
+  color: var(--color-texto);
+  padding: 0.1em;
+  border-radius: 0.5em;
+  text-align: start;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.calendar__day .event:hover{
+  background-color: var(--color-secundario);
+}
