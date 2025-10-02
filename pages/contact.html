@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-------------------BARRA DE LA PAGINA ------------->
+    <header class="barra">
+        <!----Logo de Pagina---->
+        <div class="barra-logo">
+            <a href="../index.html"><img src="../img/iconoPage.png" alt="Logo Team Queso"></a>
+        </div>
+        <!---------------------->
+
+        <!---Barra de busqueda--->
+        <div class="barra-buscador">
+            <form action="/buscar" method="get" autocomplete="off" id="search-form">
+                <input type="search" name="Buscador" id="buscador" list="cursos" placeholder="Buscar cursos...">
+                <datalist id="cursos">
+                    <option value="Java Developer Professional">
+                    <option value="Python & Data Science">
+                    <option value="SQL Master: Bases de Datos">
+                    <option value="JavaScript Moderno">
+                    <option value="React.js desde Cero">
+                    <option value="Node.js Backend">
+                    <option value="Diseño UX/UI">
+                    <option value="Machine Learning">
+                    <option value="DevOps Fundamentals">
+                    <option value="Mobile Apps con Flutter">
+                </datalist>
+                <!--Boton busqueda-->
+                <button type="submit" aria-label="Buscar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <!------------------>
+            </form>
+        </div>
+        <!-------------------->
+
+        <!---Carrito--->
+        <div class="buscador-carrito">
+            <a href="/carrito" aria-label="Carrito de compras">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>1</span>
+            </a>
+        </div>
+        <!------------->
+    </header>
+    <!------------------------------------------------>
+
+    <!----------------NAVEGADOR------------------>
+    <nav class="navbar">
+        <ul>
+            <li><a href="./contact.html">Contacto</a></li>
+            <li><a href="./giftcard.html">Giftcard</a></li>
+            <li><a href="./calendar.html">Calendario</a></li>
+
+        </ul>
+    </nav>
+    <!------------------------------------------------>
+
+    <main>
+        <form data-netlify="true" name="form" action="./succes.html">
+            <section class="form">
+
+                <div class="form__texts texts">
+                    <p class="texts__p texts__p--1">ENVÍANOS UN MENSAJE</p>
+                    <p class="texts__p texts__p--2">BÚSCANOS EN</p>
+                </div>
+
+                <div class="form__label label">
+                    <div class="label__usuario usuario">
+                        <input class="usuario__input" type="text" placeholder="Nombre/s" required name="nombre">
+                        <input class="usuario__input" type="text" placeholder="Apellido/s" required name="apellido">
+                        <input class="usuario__input" type="email" placeholder="Correo electrónico" required
+                            name="email">
+                        <input class="usuario__input" type="number" placeholder="Numero de telefono (Opcional)">
+                        <textarea class="usuario__input usuario__input--msj" placeholder="Mensaje" required
+                            name="mensaje"></textarea>
+                    </div>
+                    <div class="label__datos datos">
+                        <div class="datos__block">
+                            <a class="datos__a" href="https://x.com/TeamQuesoGG" target="_blank"><i
+                                    class="fa-brands fa-twitter"></i>
+                                @TeamQuesoGG</a>
+                        </div>
+                        <div class="datos__block">
+                            <a class="datos__a" href="https://www.instagram.com/teamquesogg/" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i> @teamquesogg</a>
+                        </div>
+                        <div class="datos__block">
+                            <a class="datos__a" href="https://www.youtube.com/c/TeamQueso" target="_blank"><i
+                                    class="fa-brands fa-youtube"></i>
+                                @teamquesogg</a>
+                        </div>
+                        <div class="datos__block">
+                            <a class="datos__a" href="https://www.tiktok.com/@teamquesogg" target="_blank"><i
+                                    class="fa-brands fa-tiktok"></i> @TeamQuesoGG</a>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="form__button">ENVIAR</button>
+
+                <!-- esto SOLO se ve en celulares -->
+                <p class="texts__p texts__p--3">BÚSCANOS EN</p>
+                <div class="datosCell">
+                    <div class="datos__block">
+                        <a class="datos__a" href="https://x.com/TeamQuesoGG" target="_blank"><i
+                                class="fa-brands fa-twitter"></i>
+                            @TeamQuesoGG</a>
+                    </div>
+                    <div class="datos__block">
+                        <a class="datos__a" href="https://www.instagram.com/teamquesogg/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i> @teamquesogg</a>
+                    </div>
+                    <div class="datos__block">
+                        <a class="datos__a" href="https://www.youtube.com/c/TeamQueso" target="_blank"><i
+                                class="fa-brands fa-youtube"></i>
+                            @teamquesogg</a>
+                    </div>
+                    <div class="datos__block">
+                        <a class="datos__a" href="https://www.tiktok.com/@teamquesogg" target="_blank"><i
+                                class="fa-brands fa-tiktok"></i> @TeamQuesoGG</a>
+                    </div>
+                </div>
+
+            </section>
+        </form>
+        <section class="ubicacionWrapper">
+            <div class="ubicacionWrapper__divUbicacion divUbicacion">
+                <p class="divUbicacion__p">ENCUENTRANOS EN</p>
+                <iframe class="divUbicacion__mapa"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.556429219889!2d-3.7780649241234423!3d40.39652257144279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd418865c098eb71%3A0xd23c49c594fbf873!2sTeam%20Queso%20Esports%20Sl!5e0!3m2!1ses!2sar!4v1758919586181!5m2!1ses!2sar"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <!------------------------------------------->
+
+    <!---------------Pie de pagina-------------->
+    <footer class="pie-pagina">
+
+        <div class="pie-pagina-contenido">
+            <div class="pie-pagina-nosotros">
+                <h4>Team Queso</h4>
+                <div class="pie-pagina-nosotros-miembros">
+                    <ul>
+                        <li><i class="fa-solid fa-user"></i>Matias Aysa </li>
+                        <li>Dni:46987982</li>
+                        <li><i class="fa-solid fa-user"></i>Leon Rey </li>
+                        <li>Dni:46874342</li>
+                        <li><i class="fa-solid fa-user"></i>Eric Barrios</li>
+                        <li>Dni:46346348/li>
+                        <li><i class="fa-solid fa-user"></i>Ivan Gamboa </li>
+                        <li>Dni:47791152</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pie-pagina-navegacion">
+                <div class="pie-pagina-navegacion-soporte">
+                    <h4>Soporte</h4>
+                    <ul>
+                        <li><a href="../pages/politicaDeCookies.html">Preguntas Frecuentes</a></li>
+                        <li><a href="">Contactanos</a></li>
+                    </ul>
+                </div>
+                <div class="pie-pagina-navegacion-legal">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="../pages/politicaDeCookies.html">Terminos y Condiciones</a></li>
+                        <li><a href="../pages/politicaDeCookies.html">Politica de Cookies</a></li>
+                        <li><a href="../pages/politicaDeCookies.html">Politica de Privacidad</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pie-pagina-redes">
+                <h4>Redes Sociales</h4>
+                <div class="pie-pagina-redes-lista">
+                    <ul>
+                        <li><a href="https://www.instagram.com/teamquesogg/" target="_blank"><i
+                                    class="fa-brands fa-square-instagram"></i>Instagram</a></li>
+                        <li><a href="https://www.facebook.com/TeamQueso/" target="_blank"><i
+                                    class="fa-brands fa-square-facebook"></i>Facebook</a></li>
+                        <li><a href="https://www.youtube.com/c/TeamQueso" target="_blank"><i
+                                    class="fa-brands fa-square-youtube"></i>Youtube</a></li>
+                        <li><a href="https://x.com/teamquesogg?lang=es" target="_blank"><i
+                                    class="fa-brands fa-square-x-twitter"></i>Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="pie-pagina-inferior">
+            <p>&copy; 2025 La Academia Team Queso. Todos los derechos reservados.</p>
+        </div>
+
+    </footer>
+    <!---------------Pie de pagina-------------->
+</body>
+
+</html>
