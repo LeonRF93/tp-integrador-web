@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>Cursos</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/homePage.css">
-    <link rel="stylesheet" href="./css/responsiveInicio.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/cusos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/header.css">
 </head>
 
 <body>
@@ -22,7 +21,7 @@
     <header class="barra">
         <!----Logo de Pagina---->
         <div class="barra-logo">
-            <a href="./index.html"><img src="./img/iconoPage.png" alt="Logo Team Queso"></a>
+            <a href="../index.html"><img src="../img/iconoPage.png" alt="Logo Team Queso"></a>
         </div>
         <!---------------------->
 
@@ -47,7 +46,7 @@
 
         <!---Carrito--->
         <div class="buscador-carrito">
-            <a href="./pages/canasto.html" aria-label="Carrito de compras">
+            <a href="./canasto.html" aria-label="Carrito de compras">
                 <i class="fa-solid fa-cart-shopping"></i>
                 <span>1</span>
             </a>
@@ -59,113 +58,30 @@
     <!----------------NAVEGADOR------------------>
     <nav class="navbar">
         <ul>
-            <li><a href="./pages/cursos.html">Cursos</a></li>
-            <li><a href="./pages/contact.html">Contacto</a></li>
-            <li><a href="./pages/giftcard.html">Giftcard</a></li>
-            <li><a href="./pages/calendar.html">Calendario</a></li>
+            <li><a href="./contact.html">Contacto</a></li>
+            <li><a href="./giftcard.html">Giftcard</a></li>
+            <li><a href="./calendar.html">Calendario</a></li>
         </ul>
     </nav>
     <!------------------------------------------------>
-
-    <!----------------CONTENIDO PRINCIPAL------------------>
     <main>
-        <!---Seccion 1-Noticias/bienvenida de la pagina---->
-        <section class="main__seccion1">
-            <div class="main__seccion1__banner1">
-                <div class="main__seccion1-contenido">
-                    <div class="main__seccion1-info">
-                        <h1>¡Último día para disfrutar de estos descuentos!</h1>
-                        <p>Tienes cursos para superar
-                            los desafíos del presente
-                            (y del futuro) desde solo $10000 pesos.</p>
-                    </div>
-                    <div class="main__seccion1-info">
-                        <h1>¡Aprende a usar la terminal!</h1>
-                        <p>Del miedo al comando: 5 sesiones con Alvaro y la terminal es tu aliada.
-                        </p>
-                    </div>
-                </div>
-                <div class="main__seccion1-foto">
-                    <img src="./img/profeAlvaro.png" alt="Imagen profesor">
-                </div>
-            </div>
+        <!---Titulo de la Pagina--->
+        <section class="main__titulo">
+            <h1>Domina las habilidades más demandadas del mercado laboral</h1>
+            <p>Aprende sin límite con los más de 1.900 cursos online de programación, 
+                IA, inglés, marketing, ciberseguridad, liderazgo y más.</p>
         </section>
 
-        <!---Seccion 2-Pasos para comprar un curso---->
-        <section class="main_seccion2">
-            <!---Titulo de la seccion 2--->
-            <div class="main_seccion2__texto">
-                <h2>Comienza tu aprendizaje en 4 simples pasos</h2>
-                <p>Únete a miles de estudiantes que están transformando
-                    sus carreras con nuestros cursos</p>
-            </div>
-            <!---Contenido de la seccion 2--->
-            <div class="main_seccion2__contenido">
-                <!--Bloque 1,crear cuenta-->
-                <div class="paso-card">
-                    <span class="paso-card-numero">1</span>
-                    <div class="paso-card-icono">
-                        <i class="fa-solid fa-user-plus"></i>
-                    </div>
-                    <div class="paso-contenido">
-                        <h3>Crea tu cuenta gratuita</h3>
-                        <p>Regístrate en segundos con tu email o redes sociales. Tendrás acceso inmediato a cursos
-                            gratuitos y recursos de aprendizaje.</p>
-                    </div>
-                </div>
-                <!--Bloque 2,explorar pagina-->
-                <div class="paso-card">
-                    <span class="paso-card-numero">2</span>
-                    <div class="paso-card-icono">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </div>
-                    <div class="paso-contenido">
-                        <h3>Explora nuestro catálogo</h3>
-                        <p>Descubre más de 100 cursos en programación, diseño, data science y más. Filtra por nivel,
-                            duración y tecnologías.</p>
-                    </div>
-                </div>
-                <!--Bloque 3,pagar cursito-->
-                <div class="paso-card">
-                    <span class="paso-card-numero">3</span>
-                    <div class="paso-card-icono">
-                        <i class="fa-solid fa-credit-card"></i>
-                    </div>
-                    <div class="paso-contenido">
-                        <h3>Elige tu curso y paga</h3>
-                        <p>Selecciona el curso que necesitas y realiza el pago seguro con tarjeta, PayPal o
-                            transferencia bancaria.</p>
-                    </div>
-                </div>
-                <!--Bloque 4,a ser el mejor programador-->
-                <div class="paso-card">
-                    <span class="paso-card-numero">4</span>
-                    <div class="paso-card-icono">
-                        <i class="fa-solid fa-graduation-cap"></i>
-                    </div>
-                    <div class="paso-contenido">
-                        <h3>¡Comienza a aprender!</h3>
-                        <p>Accede inmediatamente al contenido, únete a la comunidad y obtén tu certificado al completar
-                            el curso.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!----Seccion 3-Cursos destacados----->
-        <section class="main__seccion3">
-            <!---Titulo de la seccion 3--->
-            <div class="main__seccion3__texto">
-                <h2>Cursos destacados de Team Queso</h2>
-                <p>Creamos rutas de aprendizaje especialmente para guiarte en las
-                    herramientas y conocimientos más demandados en el mercado laboral.</p>
-                <p>¿Con cuál vas a empezar?</p>
-            </div>
+        <section class="main__contenido">
             <!---Contenido de la seccion 3--->
-            <div class="main__seccion3__cards">
+            <div class="main_contenido_titulo">
+            <h2>Todos nuestros cursos</h2>
+            </div>
+            <div class="main__cursos">
                 <!--Curso-->
                 <article class="curso-card">
                     <div class="curso-card__imagen">
-                        <img src="./img/jpeg.jpg" alt="Imagen curso Java">
+                        <img src="../img/jpeg.jpg" alt="Imagen curso Java">
                     </div>
                     <div class="curso-card__contenido">
                         <h3>Desarrolador HTML</h3>
@@ -187,7 +103,7 @@
                 <!--Curso-->
                 <article class="curso-card">
                     <div class="curso-card__imagen">
-                        <img src="./img/Python.jpg" alt="Imagen curso Java">
+                        <img src="../img/Python.jpg" alt="Imagen curso Java">
                     </div>
                     <div class="curso-card__contenido">
                         <h3>Curso de Python</h3>
@@ -210,7 +126,7 @@
                 <!--Curso-->
                 <article class="curso-card">
                     <div class="curso-card__imagen">
-                        <img src="./img/cursoJAVA.jpg" alt="Imagen curso Java">
+                        <img src="../img/cursoJAVA.jpg" alt="Imagen curso Java">
                     </div>
                     <div class="curso-card__contenido">
                         <h3>Java Developer Professional</h3>
@@ -232,7 +148,7 @@
                 <!--Curso-->
                 <article class="curso-card">
                     <div class="curso-card__imagen">
-                        <img src="./img/cursoPYTHON.jpg" alt="Imagen curso Java">
+                        <img src="../img/cursoPYTHON.jpg" alt="Imagen curso Java">
                     </div>
                     <div class="curso-card__contenido">
                         <h3>Experto en Python</h3>
@@ -255,7 +171,7 @@
                 <!--Curso-->
                 <article class="curso-card">
                     <div class="curso-card__imagen">
-                        <img src="./img/cursoSQL.jpg" alt="Imagen curso Java">
+                        <img src="../img/cursoSQL.jpg" alt="Imagen curso Java">
                     </div>
                     <div class="curso-card__contenido">
                         <h3>Profesional en SQL</h3>
@@ -278,7 +194,7 @@
                 <!--Curso-->
                 <article class="curso-card">
                     <div class="curso-card__imagen">
-                        <img src="./img/cursoJAVA.jpg" alt="Imagen curso Java">
+                        <img src="../img/cursoJAVA.jpg" alt="Imagen curso Java">
                     </div>
                     <div class="curso-card__contenido">
                         <h3>Java Developer Professional</h3>
@@ -299,53 +215,7 @@
                 </article>
             </div>
         </section>
-
-        <!----Seccion 4-Metodos de pago----->
-        <section class="main__seccion4">
-            <!---Titulo de la seccion 4--->
-            <div class="main__seccion4__texto">
-                <h2>Métodos de pago</h2>
-                <p>Aceptamos múltiples formas de pago para tu comodidad.
-                    Elige la que mejor se adapte a tus necesidades.
-                </p>
-            </div>
-            <!---Contenido de la seccion 4--->
-            <div class="main__seccion4__metodos">
-
-                <div class="metodos-carta">
-                    <i class="fa-brands fa-cc-visa"></i>
-                    <span>Visa</span>
-                </div>
-
-                <div class="metodos-carta">
-                    <i class="fa-brands fa-cc-mastercard"></i>
-                    <span>Mastercard</span>
-                </div>
-
-                <div class="metodos-carta">
-                    <i class="fa-brands fa-cc-amex"></i>
-                    <span>American Express</span>
-                </div>
-
-                <div class="metodos-carta">
-                    <i class="fa-brands fa-paypal"></i>
-                    <span>PayPal</span>
-                </div>
-
-                <div class="metodos-carta">
-                    <i class="fa-solid fa-wallet"></i>
-                    <span>Mercado Pago</span>
-                </div>
-
-                <div class="metodos-carta">
-                    <i class="fa-solid fa-building-columns"></i>
-                    <span>Transferencias</span>
-                </div>
-
-            </div>
-        </section>
     </main>
-    <!------------------------------------------->
     <!---------------Pie de pagina-------------->
     <footer class="pie-pagina">
 
@@ -370,16 +240,16 @@
                 <div class="pie-pagina-navegacion-soporte">
                     <h4>Soporte</h4>
                     <ul>
-                        <li><a href="./pages/politicaDeCookies.html">Preguntas Frecuentes</a></li>
+                        <li><a href="../pages/politicaDeCookies.html">Preguntas Frecuentes</a></li>
                         <li><a href="">Contactanos</a></li>
                     </ul>
                 </div>
                 <div class="pie-pagina-navegacion-legal">
                     <h4>Legal</h4>
                     <ul>
-                        <li><a href="./pages/politicaDeCookies.html">Terminos y Condiciones</a></li>
-                        <li><a href="./pages/politicaDeCookies.html">Politica de Cookies</a></li>
-                        <li><a href="./pages/politicaDeCookies.html">Politica de Privacidad</a></li>
+                        <li><a href="../pages/politicaDeCookies.html">Terminos y Condiciones</a></li>
+                        <li><a href="../pages/politicaDeCookies.html">Politica de Cookies</a></li>
+                        <li><a href="../pages/politicaDeCookies.html">Politica de Privacidad</a></li>
                     </ul>
                 </div>
             </div>

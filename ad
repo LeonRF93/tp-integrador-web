@@ -1,0 +1,71 @@
+[33mcommit 7bf8a3e4aa34226c1993ccc229edc051f1662324[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfeature/giftcard[m[33m, [m[1;31morigin/feature/giftcard[m[33m)[m
+Author: Leon RF <leon.rf993@gmail.com>
+Date:   Wed Oct 1 20:59:45 2025 -0300
+
+    Se agergo el header y el footer actualizado.
+
+[33mcommit 70ba82302709645ba883347afed4320f457cd965[m
+Author: Leon RF <leon.rf993@gmail.com>
+Date:   Wed Oct 1 20:05:48 2025 -0300
+
+    No se, me pidio que comitee el git. Re molesto
+
+[33mcommit 36c821ab01f352b8ab8c31f6e31bb3840172708e[m
+Author: Leon RF <leon.rf993@gmail.com>
+Date:   Wed Oct 1 20:03:04 2025 -0300
+
+    Se agregó un required a los campos de email y monto. Ademas se cambio el texto que decia destinatario a solo nombre.
+
+[33mcommit 293e7f90142e01e229c452b3f14faab91d8b83f4[m
+Author: Leon RF <leon.rf993@gmail.com>
+Date:   Wed Oct 1 19:56:43 2025 -0300
+
+    Se agrego el mail del destinatario.
+
+[33mcommit b8f278d133b48c1e23347006e198249c7340f0bf[m
+Author: Leon RF <leon.rf993@gmail.com>
+Date:   Wed Oct 1 19:41:04 2025 -0300
+
+    Se mejoro la giftcard base.
+
+[33mcommit a604feb55539ae285e7fc4cb1567c887a2983363[m
+Author: Leon RF <leon.rf993@gmail.com>
+Date:   Wed Oct 1 19:10:59 2025 -0300
+
+    Se agrego una pagina de succes y tambien se limpio un poco el codigo.
+
+[33mcommit 80fa3808cf220709ddf55e0d08e0ca52204a0603[m
+Author: Leon RF <leon.rf993@gmail.com>
+Date:   Wed Oct 1 17:29:51 2025 -0300
+
+    Se agrego el header y footer
+
+[33mcommit 13b2c57fd295830f3c84c7bd0263ac88eae78578[m
+Author: Leon RF <leon.rf993@gmail.com>
+Date:   Wed Oct 1 16:32:36 2025 -0300
+
+    Hace una banda de tiempo que no commiteo. Esta casi terminado.
+
+[33mcommit fc1fc80f1cadd311e281100a1438bd204098fb35[m
+Author: Leon RF <leon.rf993@gmail.com>
+Date:   Mon Sep 29 19:03:52 2025 -0300
+
+    Primer disenio de la giftcard. Quedan por agergar algunon campos al formulario y terminar de pulir el disenio.
+
+[33mcommit 2956bcec29899455ab6597a1e96d81d2726194a1[m[33m ([m[1;31morigin/feature/styles-global[m[33m)[m
+Author: Leon RF <leon.rf993@gmail.com>
+Date:   Mon Sep 29 15:44:24 2025 -0300
+
+    Se agregaron las media queries genericas para celulares (font-size en 70) y tablets (font-size en 90)
+
+[33mcommit 68ab99652dbdc506a029d7281e9789cc0f8f4d2f[m
+Author: Leon RF <leon.rf993@gmail.com>
+Date:   Fri Sep 26 21:06:02 2025 -0300
+
+    Primeros agergados a los estilos globales. De momento se hizo un reset, se definio la fuente, un header provisorio hasta tener el final y unas variables para los distitntos colores de la pagina.
+
+[33mcommit eeb603f1c37f539200be0098ac4e1290cf66efd4[m[33m ([m[1;31morigin/feature/calendar-signup[m[33m)[m
+Author: Leon RF <leon.rf993@gmail.com>
+Date:   Thu Sep 25 15:19:49 2025 -0300
+
+    Nuestro primer commit
