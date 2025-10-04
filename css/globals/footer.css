@@ -24,7 +24,7 @@
 
 /*Nosotros*/
 .pie-pagina-nosotros {
-    width: 15%;
+    width: 15em;
     height: 100%;
 }
 
@@ -268,12 +268,31 @@
         margin-top: 1em;
     }
 
+    .pie-pagina-redes-lista ul{
+        display: flex;
+        flex-direction: row;
+        
     }
+
+    .pie-pagina-nosotros-miembros ul{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+        .pie-pagina-nosotros-miembros ul li{
+            font-size: 0.8em;
+            width: 20%;
+        }
+
+    .pie-pagina-navegacion {
+        margin-top: 1em;
+    }    
+
+}
 
 /*TABLETS*/
 @media (min-width: 481px) and (max-width: 768px) {
     /*Footer*/
-    .pie-pagina-nosotros,
     .pie-pagina-navegacion,
     .pie-pagina-redes {
         width: 20%;
