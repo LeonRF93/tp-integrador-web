@@ -14,9 +14,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/globals/globalStyles.css">
-    <link rel="stylesheet" href="../css/globals/header.css">
-    <link rel="stylesheet" href="../css/globals/footer.css">
+    <link rel="stylesheet" href="../../css/globals/globalStyles.css">
+    <link rel="stylesheet" href="../../css/globals/header.css">
+    <link rel="stylesheet" href="../../css/globals/footer.css">
+    <link rel="stylesheet" href="../../css/account-stuff/log-in.css">
 
 </head>
 
@@ -28,7 +29,7 @@
     <header class="barra">
         <!----Logo de Pagina---->
         <div class="barra-logo">
-            <a href="../index.html"><img src="../img/globals/iconoPage.png" alt="Logo Team Queso"></a>
+            <a href="../../index.html"><img src="../../img/globals/iconoPage.png" alt="Logo Team Queso"></a>
         </div>
         <!---------------------->
 
@@ -76,11 +77,30 @@
     <!------------------------------------ HEADER ------------------------------------>
 
 
+
+    <!------------------------------------ CONTENIDO DE LA PAGINA ------------------------------------>
+
     <main>
-        <h1>Lol</h1>
+        <section class="formWrap">
+            <form class="formWrap__form form" action="#" method="get">
+                <label>
+                    <p class="form__p">E-mail</p>
+                    <input type="email" name="email" required>
+                </label>
+                <label>
+                    <p class="form__p">Contraseña</p>
+                    <input type="password" name="password" required>
+                </label>
+                <button class="form__button">CONTINUAR</button>
+                <p class="formWrap__p">¿No tienes cuenta? <a href="#" class="formWrap__a">CREAR</a></p>
+            </form>
+        </section>
     </main>
 
+    <!------------------------------------ CONTENIDO DE LA PAGINA ------------------------------------>
 
+
+    
     <!------------------------------------ FOOTER ------------------------------------>
     <footer class="pie-pagina">
 
@@ -92,7 +112,7 @@
                         <li><i class="fa-solid fa-user"></i>Matias&nbsp;Aysa - Dni:&nbsp;46987982</li>
                         <li><i class="fa-solid fa-user"></i>León&nbsp;Rey - Dni:&nbsp;46874342</li>
                         <li><i class="fa-solid fa-user"></i>Eric&nbsp;Barrios - Dni:&nbsp;46346348</li>
-                        <li><i class="fa-solid fa-user"></i>Ivan&nbsp;Gamboa&nbsp;-     Dni:&nbsp;47791152</li>
+                        <li><i class="fa-solid fa-user"></i>Ivan&nbsp;Gamboa&nbsp;- Dni:&nbsp;47791152</li>
                     </ul>
                 </div>
             </div>
