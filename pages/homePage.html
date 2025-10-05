@@ -4,39 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/homePage.css">
-    <link rel="stylesheet" href="../css/responsiveInicio.css">
+    <title>Inicio</title>
+
+    <!-- Otros links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/globals/globalStyles.css">
+    <link rel="stylesheet" href="../css/homePage.css">
+    <link rel="stylesheet" href="../css/globals/header.css">
+    <link rel="stylesheet" href="../css/globals/footer.css">
 </head>
 
 <body>
-    <!-------------------BARRA DE LA PAGINA ------------->
+    <!------------------------------------ HEADER ------------------------------------>
+
+    <!---------- BARRA DE LA PAGINA ---------->
     <header class="barra">
         <!----Logo de Pagina---->
         <div class="barra-logo">
-            <a href="homePage.html"><img src="../img/iconoPage.png" alt="Logo Team Queso"></a>
+            <a href="../index.html"><img src="../img/globals/iconoPage.png" alt="Logo Team Queso"></a>
         </div>
         <!---------------------->
 
         <!---Barra de busqueda--->
         <div class="barra-buscador">
-            <form action="/buscar" method="get" autocomplete="off" id="search-form">
+            <form action="" method="get" autocomplete="off" id="search-form">
                 <input type="search" name="Buscador" id="buscador" list="cursos" placeholder="Buscar cursos...">
                 <datalist id="cursos">
-                    <option value="Java Developer Professional">
                     <option value="Python & Data Science">
-                    <option value="SQL Master: Bases de Datos">
-                    <option value="JavaScript Moderno">
-                    <option value="React.js desde Cero">
-                    <option value="Node.js Backend">
-                    <option value="Diseño UX/UI">
-                    <option value="Machine Learning">
-                    <option value="DevOps Fundamentals">
-                    <option value="Mobile Apps con Flutter">
+                    <option value="HTML">
+                    <option value="JAVA"></option>
+
                 </datalist>
                 <!--Boton busqueda-->
                 <button type="submit" aria-label="Buscar">
@@ -49,7 +52,7 @@
 
         <!---Carrito--->
         <div class="buscador-carrito">
-            <a href="/carrito" aria-label="Carrito de compras">
+            <a href="./canasto.html" aria-label="Carrito de compras">
                 <i class="fa-solid fa-cart-shopping"></i>
                 <span>1</span>
             </a>
@@ -61,16 +64,15 @@
     <!----------------NAVEGADOR------------------>
     <nav class="navbar">
         <ul>
-            <li><a href="">Inicio</a></li>
-            <li><a href="">Fin</a></li>
-            <li><a href="">Adios</a></li>
-            <li><a href="">Contacto</a></li>
-            <li><a href="">NT</a></li>
+            <li><a href="./homePage.html">Inicio</a></li>
+            <li><a href="./contact.html">Contacto</a></li>
+            <li><a href="./giftcard.html">Giftcard</a></li>
             <li><a href="./calendar.html">Calendario</a></li>
-
         </ul>
     </nav>
     <!------------------------------------------------>
+
+    <!------------------------------------ HEADER ------------------------------------>
 
     <!----------------CONTENIDO PRINCIPAL------------------>
     <main>
@@ -100,14 +102,14 @@
         <section class="main_seccion2">
             <!---Titulo de la seccion 2--->
             <div class="main_seccion2__texto">
-                <h2>Comienza tu aprendizaje en 4 simples pasos</h2>
+                <h2>Comienza tu aprendizaje en 3 simples pasos</h2>
                 <p>Únete a miles de estudiantes que están transformando
                     sus carreras con nuestros cursos</p>
             </div>
             <!---Contenido de la seccion 2--->
             <div class="main_seccion2__contenido">
                 <!--Bloque 1,crear cuenta-->
-                <div class="paso-card">
+                <a href="./homePage.html" class="paso-card">
                     <span class="paso-card-numero">1</span>
                     <div class="paso-card-icono">
                         <i class="fa-solid fa-user-plus"></i>
@@ -117,34 +119,22 @@
                         <p>Regístrate en segundos con tu email o redes sociales. Tendrás acceso inmediato a cursos
                             gratuitos y recursos de aprendizaje.</p>
                     </div>
-                </div>
-                <!--Bloque 2,explorar pagina-->
-                <div class="paso-card">
+                </a>
+                <!--Bloque 2,explorar y elegir un curso-->
+                <a href="./homePage.html" class="paso-card">
                     <span class="paso-card-numero">2</span>
                     <div class="paso-card-icono">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
                     <div class="paso-contenido">
-                        <h3>Explora nuestro catálogo</h3>
-                        <p>Descubre más de 100 cursos en programación, diseño, data science y más. Filtra por nivel,
-                            duración y tecnologías.</p>
+                        <h3>Explora y elegí tu curso</h3>
+                        <p>Descubrí más de 10 cursos en programación, diseño, data science y mucho más.Encontrá el que se ajusta a tus objetivos 
+                            y realizá el pago seguro con tarjeta, PayPal o transferencia bancaria.</p>
                     </div>
-                </div>
-                <!--Bloque 3,pagar cursito-->
-                <div class="paso-card">
+                </a>
+                <!--Bloque 3,a ser el mejor programador-->
+                <a href="./homePage.html" class="paso-card">
                     <span class="paso-card-numero">3</span>
-                    <div class="paso-card-icono">
-                        <i class="fa-solid fa-credit-card"></i>
-                    </div>
-                    <div class="paso-contenido">
-                        <h3>Elige tu curso y paga</h3>
-                        <p>Selecciona el curso que necesitas y realiza el pago seguro con tarjeta, PayPal o
-                            transferencia bancaria.</p>
-                    </div>
-                </div>
-                <!--Bloque 4,a ser el mejor programador-->
-                <div class="paso-card">
-                    <span class="paso-card-numero">4</span>
                     <div class="paso-card-icono">
                         <i class="fa-solid fa-graduation-cap"></i>
                     </div>
@@ -153,7 +143,7 @@
                         <p>Accede inmediatamente al contenido, únete a la comunidad y obtén tu certificado al completar
                             el curso.</p>
                     </div>
-                </div>
+                </a>
             </div>
         </section>
         <!----Seccion 3-Cursos destacados----->
@@ -170,23 +160,48 @@
                 <!--Curso-->
                 <article class="curso-card">
                     <div class="curso-card__imagen">
-                        <img src="../img/cursoJAVA.jpg" alt="Imagen curso Java">
+                        <img src="../img/jpeg.jpg" alt="Imagen curso Java">
                     </div>
                     <div class="curso-card__contenido">
-                        <h3>Java Developer Professional</h3>
-                        <p>Domina Java desde cero hasta nivel avanzado. Spring Boot, APIs REST y más.</p>
+                        <h3>Desarrolador HTML</h3>
+                        <p>Dominá el lenguaje base de la web. En este curso aprenderás a 
+                            estructurar páginas profesionales, aplicar buenas prácticas de accesibilidad y 
+                            preparar tu perfil para el mundo del diseño y desarrollo front-end.</p>
                     </div>
                     <div class="curso-card__duracion">
-                        <span>⏱️ 45 horas</span>
+                        <span><i class="fa-solid fa-clock"></i> Duracion: 20 horas</span>
                     </div>
                     <div class="curso-card__precio">
-                        <span>$10000</span>
+                        <span>$18,990</span>
                     </div>
                     <div class="curso-card__botones">
-                        <button>
-                            <i class="fas fa-shopping-cart"></i>Comprar
-                        </button>
-                        <a href="">Ver detalle</a>
+                        <a class="boton_añadir" href="./añadir.html">
+                            <i class="fas fa-shopping-cart"></i>Añadir
+                        </a>
+                        <a href="./pages/Detalles de Curso 1.html" class="boton_detalle">Ver detalle</a>
+                    </div>
+                </article>
+                <!--Curso-->
+                <article class="curso-card">
+                    <div class="curso-card__imagen">
+                        <img src="../img/Python.jpg" alt="Imagen curso Java">
+                    </div>
+                    <div class="curso-card__contenido">
+                        <h3>Curso de Python</h3>
+                        <p>Un programa de estudios intensivo y online que te conectará con el mundo laboral.
+                            En pocos meses sé parte de un mundo lleno de oportunidades.</p>
+                    </div>
+                    <div class="curso-card__duracion">
+                        <span><i class="fa-solid fa-clock"></i> Duracion: 75 horas</span>
+                    </div>
+                    <div class="curso-card__precio">
+                        <span>$29,990</span>
+                    </div>
+                    <div class="curso-card__botones">
+                        <a class="boton_añadir" href="./añadir.html">
+                            <i class="fas fa-shopping-cart"></i>Añadir
+                        </a>
+                        <a href="./pages/Detalles de Curso 1.html" class="boton_detalle">Ver detalle</a>
                     </div>
                 </article>
                 <!--Curso-->
@@ -199,38 +214,16 @@
                         <p>Domina Java desde cero hasta nivel avanzado. Spring Boot, APIs REST y más.</p>
                     </div>
                     <div class="curso-card__duracion">
-                        <span>⏱️ 45 horas</span>
+                        <span><i class="fa-solid fa-clock"></i> Duracion: 45 horas</span>
                     </div>
                     <div class="curso-card__precio">
                         <span>$10000</span>
                     </div>
                     <div class="curso-card__botones">
-                        <button>
-                            <i class="fas fa-shopping-cart"></i>Comprar
-                        </button>
-                        <a href="">Ver detalle</a>
-                    </div>
-                </article>
-                <!--Curso-->
-                <article class="curso-card">
-                    <div class="curso-card__imagen">
-                        <img src="../img/cursoJAVA.jpg" alt="Imagen curso Java">
-                    </div>
-                    <div class="curso-card__contenido">
-                        <h3>Java Developer Professional</h3>
-                        <p>Domina Java desde cero hasta nivel avanzado. Spring Boot, APIs REST y más.</p>
-                    </div>
-                    <div class="curso-card__duracion">
-                        <span>⏱️ 45 horas</span>
-                    </div>
-                    <div class="curso-card__precio">
-                        <span>$10000</span>
-                    </div>
-                    <div class="curso-card__botones">
-                        <button>
-                            <i class="fas fa-shopping-cart"></i>Comprar
-                        </button>
-                        <a href="">Ver detalle</a>
+                        <a class="boton_añadir" href="./añadir.html">
+                            <i class="fas fa-shopping-cart"></i>Añadir
+                        </a>
+                        <a href="./pages/Detalles de Curso 1.html" class="boton_detalle">Ver detalle</a>
                     </div>
                 </article>
                 <!--Curso-->
@@ -239,20 +232,22 @@
                         <img src="../img/cursoPYTHON.jpg" alt="Imagen curso Java">
                     </div>
                     <div class="curso-card__contenido">
-                        <h3>Java Developer Professional</h3>
-                        <p>Domina Java desde cero hasta nivel avanzado. Spring Boot, APIs REST y más.</p>
+                        <h3>Experto en Python</h3>
+                        <p>Aprendé a programar con uno de los lenguajes más poderosos y versátiles del mundo. 
+                            Este curso te lleva desde los fundamentos hasta técnicas avanzadas en automatización, 
+                            análisis de datos y desarrollo de aplicaciones.</p>
                     </div>
                     <div class="curso-card__duracion">
-                        <span>⏱️ 45 horas</span>
+                        <span><i class="fa-solid fa-clock"></i> Duracion: 50 horas</span>
                     </div>
                     <div class="curso-card__precio">
                         <span>$10000</span>
                     </div>
                     <div class="curso-card__botones">
-                        <button>
-                            <i class="fas fa-shopping-cart"></i>Comprar
-                        </button>
-                        <a href="">Ver detalle</a>
+                        <a class="boton_añadir" href="./añadir.html">
+                            <i class="fas fa-shopping-cart"></i>Añadir
+                        </a>
+                        <a href="./pages/Detalles de Curso 1.html" class="boton_detalle">Ver detalle</a>
                     </div>
 
                 </article>
@@ -262,47 +257,49 @@
                         <img src="../img/cursoSQL.jpg" alt="Imagen curso Java">
                     </div>
                     <div class="curso-card__contenido">
-                        <h3>Java Developer Professional</h3>
-                        <p>Domina Java desde cero hasta nivel avanzado. Spring Boot, APIs REST y más.</p>
+                        <h3>Profesional en SQL</h3>
+                        <p>En este curso aprenderás lo que es una base de datos y los tipos de bases de datos que
+                            existen.</p>
                     </div>
                     <div class="curso-card__duracion">
-                        <span>⏱️ 45 horas</span>
+                        <span><i class="fa-solid fa-clock"></i> Duracion: 60 horas</span>
                     </div>
                     <div class="curso-card__precio">
                         <span>$10000</span>
                     </div>
                     <div class="curso-card__botones">
-                        <button>
-                            <i class="fas fa-shopping-cart"></i>Comprar
-                        </button>
-                        <a href="">Ver detalle</a>
+                        <a class="boton_añadir" href="./añadir.html">
+                            <i class="fas fa-shopping-cart"></i>Añadir
+                        </a>
+                        <a href="./pages/Detalles de Curso 1.html" class="boton_detalle">Ver detalle</a>
                     </div>
                 </article>
                 <!--Curso-->
                 <article class="curso-card">
                     <div class="curso-card__imagen">
-                        <img src="../img/cursoJAVA.jpg" alt="Imagen curso Java">
+                        <img src="../img/sharpCurso.jpg" alt="Imagen curso Java">
                     </div>
                     <div class="curso-card__contenido">
-                        <h3>Java Developer Professional</h3>
-                        <p>Domina Java desde cero hasta nivel avanzado. Spring Boot, APIs REST y más.</p>
+                        <h3>C# desde Cero</h3>
+                        <p>Sumergite en el mundo de la programación orientada a objetos con C#. 
+                            Aprendé a crear aplicaciones robustas, 
+                            seguras y escalables para escritorio, web y más.</p>
                     </div>
                     <div class="curso-card__duracion">
-                        <span>⏱️ 45 horas</span>
+                        <span><i class="fa-solid fa-clock"></i> Duracion: 45 horas</span>
                     </div>
                     <div class="curso-card__precio">
                         <span>$10000</span>
                     </div>
                     <div class="curso-card__botones">
-                        <button>
-                            <i class="fas fa-shopping-cart"></i>Comprar
-                        </button>
-                        <a href="">Ver detalle</a>
+                        <a class="boton_añadir" href="./añadir.html">
+                            <i class="fas fa-shopping-cart"></i>Añadir
+                        </a>
+                        <a href="./pages/Detalles de Curso 1.html" class="boton_detalle">Ver detalle</a>
                     </div>
                 </article>
             </div>
         </section>
-
         <!----Seccion 4-Metodos de pago----->
         <section class="main__seccion4">
             <!---Titulo de la seccion 4--->
@@ -349,7 +346,7 @@
         </section>
     </main>
     <!------------------------------------------->
-    <!---------------Pie de pagina-------------->
+    <!------------------------------------ FOOTER ------------------------------------>
     <footer class="pie-pagina">
 
         <div class="pie-pagina-contenido">
@@ -358,13 +355,13 @@
                 <div class="pie-pagina-nosotros-miembros">
                     <ul>
                         <li><i class="fa-solid fa-user"></i>Matias Aysa </li>
-                        <li>Dni:34343434343</li>
+                        <li>Dni:46987982</li>
                         <li><i class="fa-solid fa-user"></i>Leon Rey </li>
-                        <li>Dni:34343434343</li>
-                        <li><i class="fa-solid fa-user"></i>Eric Goat </li>
-                        <li>Dni:34343434343</li>
+                        <li>Dni:46874342</li>
+                        <li><i class="fa-solid fa-user"></i>Eric Barrios</li>
+                        <li>Dni:46346348</li>
                         <li><i class="fa-solid fa-user"></i>Ivan Gamboa </li>
-                        <li>Dni:34343434343</li>
+                        <li>Dni:47791152</li>
                     </ul>
                 </div>
             </div>
@@ -373,16 +370,16 @@
                 <div class="pie-pagina-navegacion-soporte">
                     <h4>Soporte</h4>
                     <ul>
-                        <li>Preguntas Frecuentes</li>
-                        <li>Contactanos</li>
+                        <li><a href="../pages/politicaDeCookies.html">Preguntas Frecuentes</a></li>
+                        <li><a href="">Contactanos</a></li>
                     </ul>
                 </div>
                 <div class="pie-pagina-navegacion-legal">
                     <h4>Legal</h4>
                     <ul>
-                        <li>Terminos y Condiciones</li>
-                        <li>Politica de Cookies</li>
-                        <li>Politica de Privacidad</li>
+                        <li><a href="../pages/politicaDeCookies.html">Terminos y Condiciones</a></li>
+                        <li><a href="../pages/politicaDeCookies.html">Politica de Cookies</a></li>
+                        <li><a href="../pages/politicaDeCookies.html">Politica de Privacidad</a></li>
                     </ul>
                 </div>
             </div>
@@ -409,6 +406,7 @@
         </div>
 
     </footer>
+    <!------------------------------------ FOOTER ------------------------------------>
 </body>
 
 </html>

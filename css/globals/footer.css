@@ -11,6 +11,7 @@
 }
 
 .pie-pagina ul {
+    list-style: none;
     padding: 0;
 }
 
@@ -24,7 +25,7 @@
 
 /*Nosotros*/
 .pie-pagina-nosotros {
-    width: 15%;
+    width: 15em;
     height: 100%;
 }
 
@@ -100,11 +101,21 @@
 
 }
 
+.pie-pagina-navegacion-soporte ul li a,
+.pie-pagina-navegacion-legal ul li a{
+    text-decoration: none;
+    color: inherit;
+
+}
+.pie-pagina-navegacion-soporte ul li a:hover,
+.pie-pagina-navegacion-legal ul li a:hover{
+    text-decoration:underline;
+
+}
 .pie-pagina-navegacion-soporte ul li,
 .pie-pagina-navegacion-legal ul li {
     width: 100%;
 }
-
 /*Redes Sociales*/
 .pie-pagina-redes {
     width: 15%;
@@ -258,12 +269,31 @@
         margin-top: 1em;
     }
 
+    .pie-pagina-redes-lista ul{
+        display: flex;
+        flex-direction: row;
+        
     }
+
+    .pie-pagina-nosotros-miembros ul{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+        .pie-pagina-nosotros-miembros ul li{
+            font-size: 0.8em;
+            width: 20%;
+        }
+
+    .pie-pagina-navegacion {
+        margin-top: 1em;
+    }    
+
+}
 
 /*TABLETS*/
 @media (min-width: 481px) and (max-width: 768px) {
     /*Footer*/
-    .pie-pagina-nosotros,
     .pie-pagina-navegacion,
     .pie-pagina-redes {
         width: 20%;
