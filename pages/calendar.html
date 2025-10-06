@@ -59,40 +59,48 @@
         </ul>
     </nav>
     <!------------------------------------------------>
-
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario</title>
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+   <link rel="stylesheet" href="../css/stylesCalendar.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/header.css">
+</head>
+<body>
 
 <div id="calendar_conteiner">
   <section id="calendar">
     
 
     <header class="calendar_header">
-        <button class="calendar_button calendar_button-previous">
-          <i class="fa-solid fa-arrow-left"></i>
-        </button>
-
-        <div class="calendar_header-title">
-            <h2 class="calendar_month">Septiembre</h2>
-            <span class="calendar_year">2025</span>
-        </div>
-
-        <button class="calendar_button calendar_button-next">
-          <i class="fa-solid fa-arrow-right"></i>
-        </button>
+      <h2 class="calendar_month">Octubre</h2>
+      <span class="calendar_year">2025</span>
     </header>
 
     <div class="calendar__weekdays">
-      <div>Lun</div>
-      <div>Mar</div>
-      <div>Mié</div>
-      <div>Jue</div>
-      <div>Vie</div>
-      <div>Sáb</div>
-      <div>Dom</div>
+      <p>Lun</p>
+      <p>Mar</p>
+      <p>Mié</p>
+      <p>Jue</p>
+      <p>Vie</p>
+      <p>Sáb</p>
+      <p>Dom</p>
     </div>
 
 
     <ol class="calendar__days">
-      <li class="calendar__day today">
+      <li class="calendar__day empty"></li>
+      <li class="calendar__day empty"></li>
+      <li class="calendar__day ">
         <h4>1</h4>
       </li>
       <li class="calendar__day">
@@ -106,9 +114,6 @@
       </li>
       <li class="calendar__day">
         <h4>5</h4>
-        <div class="events">
-          <a href="Detalles de Curso 2.html"><h4 class="event">Python</h4></a>
-        </div>
       </li>
       <li class="calendar__day">
         <h4>6</h4>
@@ -116,10 +121,12 @@
       <li class="calendar__day">
         <h4>7</h4>
       </li>
-      <li class="calendar__day">
+      <li class="calendar__day today">
         <h4>8</h4>
         <div class="events">
-          <a href="Detalles de Curso 1.html"><h4 class="event">HTML y CSS</h4></a>
+          <a href="Detalles de Curso 1.html" title="Curso de HTML y CSS nivel inicial">
+            <h4 class="event">HTML y CSS</h4>
+          </a>
         </div>
       </li>
       <li class="calendar__day">
@@ -139,6 +146,11 @@
       </li>
       <li class="calendar__day">
         <h4>14</h4>
+        <div class="events">
+          <a href="Detalles de Curso 2.html" title="Curso de Python nivel avanzado">
+            <h4 class="event">Python</h4>
+          </a>
+        </div>
       </li>
       <li class="calendar__day">
         <h4>15</h4>
@@ -163,9 +175,11 @@
       </li>
       <li class="calendar__day">
         <h4>22</h4>
+        
       </li>
       <li class="calendar__day">
         <h4>23</h4>
+        
       </li>
       <li class="calendar__day">
         <h4>24</h4>
@@ -188,10 +202,17 @@
       <li class="calendar__day">
         <h4>30</h4>
       </li>
+      <li class="calendar__day">
+        <h4>31</h4>
+      </li>
     </ol>
 
   </section>
 </div>
+
+
+</body>
+</html>
 
 <!---------------Pie de pagina-------------->
     <footer class="pie-pagina">
