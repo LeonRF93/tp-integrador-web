@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrarse</title>
+    <title>Mi perfil</title>
 
     <!-- Otros links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,8 +17,8 @@
     <link rel="stylesheet" href="../../css/globals/globalStyles.css">
     <link rel="stylesheet" href="../../css/globals/header.css">
     <link rel="stylesheet" href="../../css/globals/footer.css">
-    <link rel="stylesheet" href="../../css/account-stuff/log-in.css">
-    <link rel="stylesheet" href="../../css/account-stuff/sign-up.css">
+    <link rel="stylesheet" href="../../css/account-stuff/my-profile.css">
+    <link rel="stylesheet" href="../../css/account-stuff/edit-profile.css">
 
 </head>
 
@@ -37,8 +37,7 @@
         <!---Barra de busqueda--->
         <div class="barra-buscador">
             <form action="" method="get" autocomplete="off" id="search-form">
-                <input class="form__input" type="search" name="Buscador" id="buscador" list="cursos"
-                    placeholder="Buscar cursos...">
+                <input type="search" name="Buscador" id="buscador" list="cursos" placeholder="Buscar cursos...">
                 <datalist id="cursos">
                     <option value="Python & Data Science">
                     <option value="HTML">
@@ -83,41 +82,49 @@
     <!------------------------------------ CONTENIDO DE LA PAGINA ------------------------------------>
 
     <main>
-        <section class="formWrap">
-            <form class="formWrap__form form" action="./succes-sign-up.html" method="get">
+        <section class="sectionWrap perfil">
 
-                <div class="form__field">
-                    <label class="form__label" for="name">Ingresa tu nombre</label>
-                    <input class="form__input" type="text" id="name" name="name" maxlength="40" required>
+            <form class="formProfile" action="./my-profile.html" method="get">
+
+                <div class="perfil__imgWrap">
+                    <div class="perfil__imgBackground">
+                        <img class="perfil__img" src="../../img/account-stuff/withzack.jpg" alt="Foto de perfil">
+                    </div>
+                    <i class="fa-solid fa-trash-can"></i>
                 </div>
 
                 <div class="form__field">
-                    <label class="form__label" for="surname">Ingresa tu apellido </label>
-                    <input class="form__input" type="text" id="surname" name="surname" maxlength="40" required>
+                    <label class="form__label" for="name">Nombre</label>
+                    <input class="form__input" type="text" id="name" name="name" maxlength="40" placeholder="Zack">
                 </div>
 
                 <div class="form__field">
-                    <label class="form__label" for="dni">Ingresa tu DNI (sin puntos)</label>
+                    <label class="form__label" for="surname">Apellido </label>
+                    <input class="form__input" type="text" id="surname" name="surname" maxlength="40" placeholder="Barrera">
+                </div>
+
+                <div class="form__field">
+                    <label class="form__label" for="dni">DNI (sin puntos)</label>
                     <input class="form__input form__input--number" type="number" id="dni" name="dni" min="1000"
-                        max="999999999" required>
+                        max="999999999" placeholder="336453XX">
                 </div>
 
                 <div class="form__field">
-                    <label class="form__label" for="username">Ingresa un nombre de usuario</label>
-                    <input class="form__input" type="text" id="username" name="username" maxlength="40" required>
+                    <label class="form__label" for="email">E-mail</label>
+                    <input class="form__input" type="email" id="email" name="email" maxlength="40" placeholder="withzack.845@gmail.com">
                 </div>
 
-                <div class="form__field">
-                    <label class="form__label" for="password">Ingresa una contraseña</label>
-                    <input class="form__input" type="password" id="password" name="password" minlength="8"
-                        maxlength="20" required>
-                </div>
-
-                <button class="form__button">CONTINUAR</button>
-                <p class="formWrap__p">¿Ya tienes una cuenta? <a href="./log-in.html" class="formWrap__a">INICIÁ
-                        SESIÓN</a></p>
             </form>
+
+            <div class="perfil__button perfil__button--cerrarSesion">
+                <a href="./my-profile.html">CANCELAR</a>
+            </div>
+            <div class="perfil__button perfil__button--guardar">
+                <a href="./my-profile.html">GUARDAR</a>
+            </div>
+
         </section>
+
     </main>
 
     <!------------------------------------ CONTENIDO DE LA PAGINA ------------------------------------>
