@@ -8,23 +8,40 @@
     box-shadow: 10px 10px 0.8em black;
     display: flex;
     flex-direction: column;
-    gap: 2em;
     padding: 5em;
+    gap: 2em;
     background-color: var(--color-principalDegradado);
 }
 
-.formWrap__form input {
+.form__field {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__input {
     font-size: 1.2em;
     width: 20em;
     height: 3em;
 }
+
+/* sacar las flechitas horribles del input number en Chrome, Safari, Edge, Opera */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* sacar las flechitas horribles del input number en Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
 
 input:focus {
     border: 2.3px solid var(--color-secundarioDegradado);
     outline: none;
 }
 
-.form__p {
+.form__label {
     font-weight: bold;
 }
 
@@ -41,11 +58,11 @@ input:focus {
     transition: background-color 0.3s;
 }
 
-.form__button:hover{
+.form__button:hover {
     background-color: var(--color-secundarioDegradado);
 }
 
-.formWrap__a{
+.formWrap__a {
     text-decoration: none;
     color: var(--color-secundario);
     font-weight: bold;
@@ -57,12 +74,12 @@ input:focus {
 /* --- CELUS ---*/
 @media (max-width: 480px) {
 
-    .formWrap{
+    .formWrap {
         margin-top: 25%;
         margin-bottom: 25%;
     }
 
-    .formWrap__form{
+    .formWrap__form {
         font-size: 75%;
     }
 
