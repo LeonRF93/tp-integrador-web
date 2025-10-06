@@ -1,80 +1,116 @@
-.container{
-    margin: 5em;
-}
-
-/* PERFIL */
-.perfil {
+main {
     padding: 5em;
-    background: var(--color-principalDegradado);
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-.perfil-info {
     display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 1.5rem;
-    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
 }
 
-.avatar {
+/* ------------------ PERFIL ------------------ */
+
+.sectionWrap {
+    background-color: var(--color-principalDegradado);
+    padding: 4em;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.perfil__imgWrap {
+    width: 20em;
+    height: 20em;
+
+}
+
+.perfil__img {
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
 }
 
-.email {
-    color: #666;
-    margin-top: 0.3rem;
+.perfil__datos--titulo {
+    font-weight: bold;
+    color: var(--color-secundario);
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
 }
 
-.editar-btn {
-    margin-top: 0.8rem;
-    background: var(--color-secundario);
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
+.perfil__tarjetas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.perfil__tarjetas i {
+    user-select: none;
     cursor: pointer;
-    transition: background 0.3s;
+    color: red;
+    text-align: right;
 }
 
-.editar-btn:hover {
-    background: var(--color-secundarioDegradado);
+.perfil__button {
+    margin-top: .5em;
+    text-align: center;
+    font-size: 1.2em;
+    cursor: pointer;
+    width: 12em;
+    padding: 0.5em;
+    border-radius: 2em;
+    background-color: var(--color-principalDegradado);
+    border: 2px solid var(--color-secundarioDegradado);
+
+    transition: background-color 0.3s;
 }
 
-/* CURSOS */
-.perfil-cursos h3 {
-    margin-bottom: 1rem;
+.perfil__button:hover {
+    background-color: var(--color-secundarioDegradado);
 }
 
-.cursos-grid {
-    display: grid;
-    gap: 1rem;
+.perfil__button a {
+    color: var(--color-secundario);
 }
 
-.curso {
-    background: #f9fafb;
-    border-radius: 8px;
-    padding: 1rem;
-    color: rgb(151, 151, 151);
+/* ------------------ PERFIL ------------------ */
+
+
+/* ------------------ CURSOS ------------------ */
+
+.cursoWrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cursoWrap__cursos{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.curso__nombre {
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
 .curso__barra {
-    height: 8px;
-    background: #ddd;
-    border-radius: 5px;
-    overflow: hidden;
+    width: 100%;
+    height: .6em;
+    border-radius: 15px;
+    background-color: var(--color-terciario);
 }
 
-.curso__barra div {
-    height: 100%;
-    background: var(--color-primario);
+.curso__barra--progreso1 {
+    width: 25%;
+    height: .6em;
+    border-radius: 15px;
+    background-color: var(--color-secundario);
 }
 
-.curso__barra.completado div {
-    background: #10b981;
+.curso__barra--progreso3 {
+    width: 80%;
+    height: .6em;
+    border-radius: 15px;
+    background-color: var(--color-secundario);
 }
+
+/* ------------------ CURSOS ------------------ */
