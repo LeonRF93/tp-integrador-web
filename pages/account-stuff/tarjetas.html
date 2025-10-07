@@ -19,11 +19,11 @@
     <link rel="stylesheet" href="../../css/globals/footer.css">
     <link rel="stylesheet" href="../../css/account-stuff/my-profile.css">
     <link rel="stylesheet" href="../../css/account-stuff/edit-profile.css">
+    <link rel="stylesheet" href="../../css/account-stuff/tarjetas.css">
 
 </head>
 
 <body>
-
     <!------------------------------------ HEADER ------------------------------------>
 
     <!---------- BARRA DE LA PAGINA ---------->
@@ -78,63 +78,38 @@
     <!------------------------------------ HEADER ------------------------------------>
 
 
-
-    <!------------------------------------ CONTENIDO DE LA PAGINA ------------------------------------>
-
-    <main>
-
-        <div class="volver">
-            <a href="./my-profile.html">
-                <button class="botonBack"><i class="fa-solid fa-arrow-left"></i></button>
-            </a>
-        </div>
-
-        <section class="sectionWrap perfil">
-
-            <form class="formProfile" action="./my-profile.html" method="get">
-
-                <div class="perfil__imgWrap">
-                    <div class="perfil__imgBackground">
-                        <img class="perfil__img" src="../../img/account-stuff/withzack.jpg" alt="Foto de perfil">
-                    </div>
-                    <i class="fa-solid fa-trash-can"></i>
-                </div>
-
-                <div class="form__field">
-                    <label class="form__label" for="name">Nombre</label>
-                    <input class="form__input" type="text" id="name" name="name" maxlength="40" placeholder="Zack">
-                </div>
-
-                <div class="form__field">
-                    <label class="form__label" for="surname">Apellido </label>
-                    <input class="form__input" type="text" id="surname" name="surname" maxlength="40"
-                        placeholder="Barrera">
-                </div>
-
-                <div class="form__field">
-                    <label class="form__label" for="dni">DNI (sin puntos)</label>
-                    <input class="form__input form__input--number" type="number" id="dni" name="dni" min="1000"
-                        max="999999999" placeholder="336453XX">
-                </div>
-
-                <div class="form__field">
-                    <label class="form__label" for="email">E-mail</label>
-                    <input class="form__input" type="email" id="email" name="email" maxlength="40"
-                        placeholder="withzack.845@gmail.com">
-                </div>
-
-            </form>
-
-            <div class="perfil__button perfil__button--guardar">
-                <a href="./my-profile.html">GUARDAR</a>
+    <main class="contenido">
+        <div class="form-container">
+            <div class="back">
+                <a href="../index.html">
+                    <button class="botonBack"><i class="fa-solid fa-arrow-left"></i></button>
+                </a>
             </div>
+            <div class="top">
+                <h2>Registro de Tarjeta</h2>
+            </div>
+            <form action="/procesar_tarjeta" method="get" class="form">Nombre del Propietario</label>
+                <input type="text" id="propietario" name="propietario" required>
 
-        </section>
+                <label for="direccion">Dirección</label>
+                <input type="text" id="direccion" name="direccion" required>
 
+                <label for="nombre">Nombre del Titular de la Tarjeta</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="numero">Número de Tarjeta</label>
+                <input type="number" id="numero" name="numero" maxlength="4" required>
+
+                <label for="vencimiento">Fecha de Vencimiento (MM/AA)</label>
+                <input type="month" id="vencimiento" name="vencimiento" placeholder="MM/AA" required>
+
+                <label for="cvv">Código de Seguridad (CVV)</label>
+                <input type="password" id="cvv" name="cvv" maxlength="4" required>
+
+                <input type="submit" value="Registrar Tarjeta" class="boton">
+            </form>
+        </div>
     </main>
-
-    <!------------------------------------ CONTENIDO DE LA PAGINA ------------------------------------>
-
 
 
     <!------------------------------------ FOOTER ------------------------------------>

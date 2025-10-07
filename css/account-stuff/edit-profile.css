@@ -1,3 +1,9 @@
+.volver{
+    position: absolute;
+    margin-right: 24.5em;
+    margin-top: .8em;
+}
+
 .perfil__imgWrap {
     width: 100%;
     display: flex;

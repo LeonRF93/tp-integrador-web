@@ -6,6 +6,28 @@ main {
     gap: 2em;
 }
 
+.back {
+    margin-right: 70em;
+    position: absolute;
+}
+
+.botonBack {
+    height: 3em;
+    width: 3em;
+    padding: 0.5em;
+    border-radius: 50%;
+    color: var(--color-secundario);
+    background-color: var(--color-principalDegradado);
+    border-color: var(--color-secundarioDegradado);
+    font-size: 2em;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.botonBack:hover {
+    background-color: var(--color-secundarioDegradado);
+}
+
 /* ------------------ PERFIL ------------------ */
 
 .sectionWrap {
@@ -17,7 +39,7 @@ main {
     gap: 3em;
 }
 
-.titulo{
+.titulo {
     text-align: center;
 }
 
@@ -52,7 +74,7 @@ main {
     text-align: right;
 }
 
-.perfil__button {
+/* .perfil__button {
     margin-top: .5em;
     text-align: center;
     font-size: 1.2em;
@@ -62,6 +84,26 @@ main {
     border-radius: 2em;
     background-color: var(--color-principalDegradado);
     border: 2px solid var(--color-secundarioDegradado);
+
+    transition: background-color 0.3s;
+}
+
+.perfil__button:hover {
+    background-color: var(--color-secundarioDegradado);
+}
+*/
+
+.perfil__button {
+    margin-top: .5em;
+    text-align: center;
+    font-size: 1.2em;
+    cursor: pointer;
+    width: 12em;
+    padding: 0.5em;
+    border-radius: 2em;
+    background-color: var(--color-principalDegradado);
+    border-color: var(--color-secundarioDegradado);
+    color: var(--color-secundario);
 
     transition: background-color 0.3s;
 }
@@ -131,3 +173,16 @@ main {
 }
 
 /* ------------------ CURSOS ------------------ */
+
+/* -------------------- MEDIA QUERIES -------------------- */
+
+@media (max-width: 1138px) {
+
+    main .back {
+        margin-right: 20em;
+        margin-top: 2.2em;
+    }
+
+}
+
+/* -------------------- MEDIA QUERIES -------------------- */
