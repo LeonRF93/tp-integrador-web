@@ -32,14 +32,14 @@
 
 .main__seccion1-info h1 {
     line-height: 1.2;
-    color: white;
+    /* color: white; */
     font-size: 2em;
     margin-bottom: 0.3em;
 }
 
 .main__seccion1-info p {
     line-height: 1.5;
-    color: #f1eaea;
+    /* color: #f1eaea; */
     font-size: 1.1em;
 }
 
@@ -59,7 +59,7 @@
     width: 100%;
     display: flex;
     padding: 1em 5em;
-    background: #fefbf7;
+    background: var(--color-principal);
     gap: 2em;
     align-items: center;
     height: 30em;
@@ -91,7 +91,7 @@
     display: flex;
     width: 35em;
     flex-direction: column;
-    color: var(--color-principal);
+    color: var(--color-texto);
 }
 
 .seccionGirfCard-contenido h2 {
@@ -122,7 +122,7 @@
 /*-------------------------------------------*/
 /*---------------SECTION TIPO DE CURSADA-------------------*/
 .main_seccionTipoCursada {
-    background: var(--color-principal);
+    background: #fefbf7;
     height: 30em;
     padding: 1em 5em;
     display: flex;
@@ -156,7 +156,7 @@
     display: flex;
     width: 35em;
     flex-direction: column;
-    color: white;
+    color: var(--color-principal);
 }
 .seccionTipoCursadaContenido h2{
     margin-bottom: 1em;
