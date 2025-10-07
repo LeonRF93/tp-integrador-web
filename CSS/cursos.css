@@ -1,0 +1,124 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    margin: 2em 2em 1.5em;
+}
+
+.filtros {
+    display: flex;
+    flex-direction: column;
+    width: 15em;
+    height: auto;
+    padding: 2em;
+    margin: 0 1em 2em 2em;
+    border-radius: 1em;
+    background-color: var(--color-principalDegradado);
+}
+
+.titulo {
+    color: var(--color-secundario);
+}
+
+.filtros__opciones {
+    margin: 1.5em 0;
+}
+
+.filtros__opciones-filtro {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    margin-bottom: 0.5em;
+}
+.checkbox{
+    width: auto;
+    height: auto;
+    margin-right: 0.5em ;
+}
+
+.cursos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: auto;
+    margin: 0em 3em;
+}
+
+.cursos__contenedor {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+    padding: 2em;
+    background-color: var(--color-principalDegradado);
+    border-radius: 1em;
+    margin-bottom: 2em;
+}
+
+.cursos__contenedor-imagen {
+    height: 15em;
+    width: 20em;
+}
+
+.cursos__contenedor-descripcion {
+    margin: 0 2em;
+    width: 45em;
+    height: auto;
+}
+
+.categoria {
+    font-style: italic;
+}
+
+.descripcion {
+    margin: 0.5em 0.3em;
+    line-height: 2em;
+}
+
+.fechaInicio {
+    margin-left: 1.5em;
+}
+
+.imagen {
+    height: 100%;
+    width: 100%;
+    border-radius: 0.5em;
+}
+
+.cursos__contenedor-compra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15em;
+    height: auto;
+}
+
+.valorCurso {
+    margin-bottom: 1em;
+}
+
+.precio {
+    color: var(--color-secundario);
+    font-size: 3em;
+}
+
+.boton {
+    height: 4em;
+    width: 15em;
+    margin: 1.5em 0 0;
+    padding: 0.5em;
+    border-radius: 1em;
+    color: var(--color-secundario);
+    background-color: var(--color-principalDegradado);
+    border-color: var(--color-secundarioDegradado);
+    font-size: 85%;
+    cursor: pointer;
+}
+.pagina{
+    display: flex;
+    flex-direction: row;
+}
+.pagina__arrows{
+    margin: 0 1em;
+}
