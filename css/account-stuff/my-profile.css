@@ -176,7 +176,7 @@ main {
 
 /* -------------------- MEDIA QUERIES -------------------- */
 
-@media (max-width: 1138px) {
+@media (max-width: 1138px) { /* para que el boton de volver quede en la esquina a pesar del wrap*/
 
     main .back {
         margin-right: 20em;

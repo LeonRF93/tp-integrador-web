@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi perfil</title>
+    <title>Registrar tarjeta</title>
 
     <!-- Otros links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,8 +17,6 @@
     <link rel="stylesheet" href="../../css/globals/globalStyles.css">
     <link rel="stylesheet" href="../../css/globals/header.css">
     <link rel="stylesheet" href="../../css/globals/footer.css">
-    <link rel="stylesheet" href="../../css/account-stuff/my-profile.css">
-    <link rel="stylesheet" href="../../css/account-stuff/edit-profile.css">
     <link rel="stylesheet" href="../../css/account-stuff/tarjetas.css">
 
 </head>
@@ -78,38 +76,82 @@
     <!------------------------------------ HEADER ------------------------------------>
 
 
+    <!------------------------------------ CONTENIDO DE LA PAGINA ------------------------------------>
+
     <main class="contenido">
-        <div class="form-container">
+
+        <form action="./succes-tarjeta.html" method="get" class="formWrap">
+
             <div class="back">
-                <a href="../index.html">
-                    <button class="botonBack"><i class="fa-solid fa-arrow-left"></i></button>
+                <a href="./my-profile.html">
+                    <button type="button" class="botonBack"><i class="fa-solid fa-arrow-left"></i></button>
                 </a>
             </div>
-            <div class="top">
-                <h2>Registro de Tarjeta</h2>
-            </div>
-            <form action="/procesar_tarjeta" method="get" class="form">Nombre del Propietario</label>
-                <input type="text" id="propietario" name="propietario" required>
 
-                <label for="direccion">Dirección</label>
-                <input type="text" id="direccion" name="direccion" required>
+            <section class="formWrap__form">
+                <h2>INFORMACIÓN DE LA TARJETA</h2>
 
-                <label for="nombre">Nombre del Titular de la Tarjeta</label>
-                <input type="text" id="nombre" name="nombre" required>
+                <div class="form__field">
+                    <label class="form__label" for="tipo">Tipo</label>
+                    <select class="form__input" id="tipo">
+                        <option value="visa">Visa</option>
+                        <option value="mastercard">Mastercard</option>
+                    </select>
+                </div>
 
-                <label for="numero">Número de Tarjeta</label>
-                <input type="number" id="numero" name="numero" maxlength="4" required>
+                <div class="form__field">
+                    <label class="form__label" for="numero">Número de Tarjeta</label>
+                    <input class="form__input" type="number" id="numero" name="numero" maxlength="20" required>
+                </div>
 
-                <label for="vencimiento">Fecha de Vencimiento (MM/AA)</label>
-                <input type="month" id="vencimiento" name="vencimiento" placeholder="MM/AA" required>
+                <div class="form__field">
+                    <label class="form__label" for="cvv">Código de Seguridad (CVV)</label>
+                    <input class="form__input form__input--small" type="password" id="cvv" name="cvv" maxlength="3"
+                        required>
+                </div>
 
-                <label for="cvv">Código de Seguridad (CVV)</label>
-                <input type="password" id="cvv" name="cvv" maxlength="4" required>
+                <div class="form__field">
+                    <label class="form__label" for="vencimiento">Fecha de Vencimiento (MM/AA)</label>
+                    <input class="form__input form__input--date" type="month" id="vencimiento" name="vencimiento"
+                        placeholder="MM/AA" required>
+                </div>
 
-                <input type="submit" value="Registrar Tarjeta" class="boton">
-            </form>
-        </div>
+            </section>
+
+            <section class="formWrap__form">
+
+                <h2>INFORMACIÓN DE FACTURACIÓN</h2>
+
+                <div class="form__field">
+                    <label class="form__label" for="direccion">Dirección</label>
+                    <input class="form__input" type="text" id="direccion" name="direccion" required>
+                </div>
+
+                <div class="form__field">
+                    <label class="form__label" for="cvv">Código postal</label>
+                    <input class="form__input form__input--small" type="number" id="cp" name="cp" maxlength="8"
+                        required>
+                </div>
+
+                <div class="form__field">
+                    <label class="form__label" for="nombre">Nombre del titular</label>
+                    <input class="form__input" type="text" id="name" name="nombre" required>
+                </div>
+
+                <div class="form__field">
+                    <label class="form__label" for="nombre">Apellido del titular</label>
+                    <input class="form__input" type="text" id="surname" name="nombre" required>
+                </div>
+
+                <button type="submit" class="form__button">CONTINUAR</button>
+
+            </section>
+
+        </form>
+
     </main>
+
+    <!------------------------------------ CONTENIDO DE LA PAGINA ------------------------------------>
 
 
     <!------------------------------------ FOOTER ------------------------------------>
