@@ -1,0 +1,188 @@
+main {
+    padding: 5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+}
+
+.back {
+    margin-right: 70em;
+    position: absolute;
+}
+
+.botonBack {
+    height: 3em;
+    width: 3em;
+    padding: 0.5em;
+    border-radius: 50%;
+    color: var(--color-secundario);
+    background-color: var(--color-principalDegradado);
+    border-color: var(--color-secundarioDegradado);
+    font-size: 2em;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.botonBack:hover {
+    background-color: var(--color-secundarioDegradado);
+}
+
+/* ------------------ PERFIL ------------------ */
+
+.sectionWrap {
+    background-color: var(--color-principalDegradado);
+    padding: 4em;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.titulo {
+    text-align: center;
+}
+
+.perfil__imgWrap {
+    width: 20em;
+    height: 20em;
+
+}
+
+.perfil__img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.perfil__datos--titulo {
+    font-weight: bold;
+    color: var(--color-secundario);
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.perfil__tarjetas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.perfil__tarjetas i {
+    user-select: none;
+    cursor: pointer;
+    color: red;
+    text-align: right;
+}
+
+/* .perfil__button {
+    margin-top: .5em;
+    text-align: center;
+    font-size: 1.2em;
+    cursor: pointer;
+    width: 12em;
+    padding: 0.5em;
+    border-radius: 2em;
+    background-color: var(--color-principalDegradado);
+    border: 2px solid var(--color-secundarioDegradado);
+
+    transition: background-color 0.3s;
+}
+
+.perfil__button:hover {
+    background-color: var(--color-secundarioDegradado);
+}
+*/
+
+.perfil__button {
+    margin-top: .5em;
+    text-align: center;
+    font-size: 1.2em;
+    cursor: pointer;
+    width: 12em;
+    padding: 0.5em;
+    border-radius: 2em;
+    background-color: var(--color-principalDegradado);
+    border-color: var(--color-secundarioDegradado);
+    color: var(--color-secundario);
+
+    transition: background-color 0.3s;
+}
+
+.perfil__button:hover {
+    background-color: var(--color-secundarioDegradado);
+}
+
+.perfil__button a {
+    user-select: none;
+    display: block;
+    color: var(--color-secundario);
+    text-decoration: none;
+}
+
+.perfil__button--cerrarSesion {
+    border-radius: 0;
+    width: 100%;
+    border: 2px solid red;
+}
+
+.perfil__button--cerrarSesion:hover {
+    background-color: red;
+}
+
+/* ------------------ PERFIL ------------------ */
+
+
+/* ------------------ CURSOS ------------------ */
+
+.cursoWrap {
+    display: flex;
+    flex-direction: column;
+    gap: 6em;
+}
+
+.cursoWrap__cursos {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.curso__nombre {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.curso__barra {
+    width: 100%;
+    height: .6em;
+    border-radius: 15px;
+    background-color: var(--color-terciario);
+}
+
+.curso__barra--progreso1 {
+    width: 25%;
+    height: .6em;
+    border-radius: 15px;
+    background-color: var(--color-secundario);
+}
+
+.curso__barra--progreso3 {
+    width: 80%;
+    height: .6em;
+    border-radius: 15px;
+    background-color: var(--color-secundario);
+}
+
+/* ------------------ CURSOS ------------------ */
+
+/* -------------------- MEDIA QUERIES -------------------- */
+
+@media (max-width: 1138px) { /* para que el boton de volver quede en la esquina a pesar del wrap*/
+
+    main .back {
+        margin-right: 20em;
+        margin-top: 2.2em;
+    }
+
+}
+
+/* -------------------- MEDIA QUERIES -------------------- */
