@@ -1,3 +1,8 @@
+.all {
+    display: flex;
+    flex-direction: column;
+}
+
 .main {
     display: flex;
     flex-direction: row;
@@ -15,6 +20,12 @@
     background-color: var(--color-principalDegradado);
 }
 
+.filtrosCelulares {
+    display: none;
+    margin-top: 2em;
+    justify-content: space-around;
+}
+
 .titulo {
     color: var(--color-secundario);
 }
@@ -30,10 +41,11 @@
     height: auto;
     margin-bottom: 0.5em;
 }
-.checkbox{
+
+.checkbox {
     width: auto;
     height: auto;
-    margin-right: 0.5em ;
+    margin-right: 0.5em;
 }
 
 .cursos {
@@ -41,7 +53,7 @@
     flex-direction: column;
     align-items: center;
     height: auto;
-    width: auto;
+    width: 100%;
     margin: 0em 3em;
 }
 
@@ -63,7 +75,7 @@
 
 .cursos__contenedor-descripcion {
     margin: 0 2em;
-    width: 45em;
+    width: 60%;
     height: auto;
 }
 
@@ -90,7 +102,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 15em;
+    width: 20%;
     height: auto;
 }
 
@@ -115,10 +127,96 @@
     font-size: 85%;
     cursor: pointer;
 }
-.pagina{
+
+.pagina {
     display: flex;
     flex-direction: row;
 }
-.pagina__arrows{
+
+.pagina__arrows {
     margin: 0 1em;
+}
+
+.filtrarCurso {
+    width: 10em;
+    height: 3em;
+    margin: 0;
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 70%;
+    }
+
+    .filtros {
+        display: none;
+    }
+
+    .cursos {
+        margin: 0 2em;
+    }
+
+    .filtrosCelulares {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .cursos__contenedor {
+        flex-direction: column;
+        width: auto;
+        min-width: 28em;
+    }
+
+    .cursos__contenedor-imagen {
+        width: 100%;
+    }
+
+    .cursos__contenedor-descripcion {
+        margin: 2em 1em;
+        width: 100%;
+    }
+
+    .cursos__contenedor-compra {
+        width: 100%;
+    }
+}
+
+/* --- TABLETS ---*/
+@media (min-width: 481px) and (max-width: 768px) {
+    body {
+        font-size: 90%;
+    }
+
+    .filtros {
+        display: none;
+    }
+
+    .cursos {
+        margin: 0 2em;
+    }
+
+    .filtrosCelulares {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .cursos__contenedor-imagen {
+        width: 100%;
+    }
+
+    .cursos__contenedor {
+        flex-direction: column;
+        width: auto;
+        min-width: 30em;
+    }
+
+    .cursos__contenedor-descripcion {
+        margin: 2em 1em;
+        width: 100%;
+    }
+
+    .cursos__contenedor-compra {
+        width: 100%;
+    }
+
 }

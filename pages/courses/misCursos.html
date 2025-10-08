@@ -5,40 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cursos</title>
-    <link rel="stylesheet" href="../css/misCursos.css">
+    <link rel="stylesheet" href="../../css/courses/misCursos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../../css/globals/globalStyles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../../css/globals/header.css">
+    <link rel="stylesheet" href="../../css/globals/footer.css">
 </head>
 
 <body>
+    <!------------------------------------ HEADER ------------------------------------>
+
+    <!---------- BARRA DE LA PAGINA ---------->
     <header class="barra">
         <!----Logo de Pagina---->
         <div class="barra-logo">
-            <a href="./homePage.html"><img src="../img/iconoPage.png" alt="Logo Team Queso"></a>
+            <a href="../../index.html"><img src="../../img/globals/iconoPage.png" alt="Logo Team Queso"></a>
         </div>
         <!---------------------->
 
         <!---Barra de busqueda--->
         <div class="barra-buscador">
-            <form action="/buscar" method="get" autocomplete="off" id="search-form">
-                <input type="search" name="Buscador" id="buscador" list="cursos" placeholder="Buscar cursos...">
+            <form action="" method="get" autocomplete="off" id="search-form">
+                <input class="form__input" type="search" name="Buscador" id="buscador" list="cursos"
+                    placeholder="Buscar cursos...">
                 <datalist id="cursos">
-                    <option value="Java Developer Professional">
                     <option value="Python & Data Science">
-                    <option value="SQL Master: Bases de Datos">
-                    <option value="JavaScript Moderno">
-                    <option value="React.js desde Cero">
-                    <option value="Node.js Backend">
-                    <option value="Diseño UX/UI">
-                    <option value="Machine Learning">
-                    <option value="DevOps Fundamentals">
-                    <option value="Mobile Apps con Flutter">
+                    <option value="HTML">
+                    <option value="JAVA"></option>
+
                 </datalist>
                 <!--Boton busqueda-->
                 <button type="submit" aria-label="Buscar">
@@ -51,20 +49,27 @@
 
         <!---Carrito--->
         <div class="buscador-carrito">
-            <a href="/carrito" aria-label="Carrito de compras">
+            <a href="../index.html" aria-label="Carrito de compras">
                 <i class="fa-solid fa-cart-shopping"></i>
                 <span>1</span>
             </a>
         </div>
         <!------------->
     </header>
+    <!------------------------------------------------>
+
+    <!----------------NAVEGADOR------------------>
     <nav class="navbar">
         <ul>
+            <li><a href="../index.html">Inicio</a></li>
             <li><a href="./contact.html">Contacto</a></li>
             <li><a href="./giftcard.html">Giftcard</a></li>
             <li><a href="./calendar.html">Calendario</a></li>
         </ul>
     </nav>
+    <!------------------------------------------------>
+
+    <!------------------------------------ HEADER ------------------------------------>
     <main>
         <section class="contenido">
             <div class="contenedorGen">
@@ -79,7 +84,7 @@
                         <div class="contenedor1__profesor">
                             <h2 class="contenedor1__profesor-titulo">Profesor</h2>
                             <div class="contenedor1__profesor-imagen">
-                                <img src="../IMG/profesor.jpg" class="perfil">
+                                <img src="../../img/courses/profesor.jpg" alt="Imagen Profesor" class="perfil">
                             </div>
                             <div class="contenedor1__profesor-descripcion">
                                 <div class="detalles__nombre">
@@ -170,7 +175,9 @@
                             </h6>
                         </div>
                     </div>
-                    <button id="entregar" name="entregar" class="boton"><h3>Agregar Archivo</h3></button>
+                    <button id="entregar" name="entregar" class="boton">
+                        <h3>Agregar Archivo</h3>
+                    </button>
                 </div>
                 <div class="contenedor contenedor4">
                     <h2>Proximas Entregas</h2>
@@ -203,6 +210,7 @@
                 </div>
         </section>
     </main>
+    <!------------------------------------ FOOTER ------------------------------------>
     <footer class="pie-pagina">
 
         <div class="pie-pagina-contenido">
@@ -210,14 +218,10 @@
                 <h4>Team Queso</h4>
                 <div class="pie-pagina-nosotros-miembros">
                     <ul>
-                        <li><i class="fa-solid fa-user"></i>Matias Aysa </li>
-                        <li>Dni:34343434343</li>
-                        <li><i class="fa-solid fa-user"></i>Leon Rey </li>
-                        <li>Dni:34343434343</li>
-                        <li><i class="fa-solid fa-user"></i>Eric Goat </li>
-                        <li>Dni:34343434343</li>
-                        <li><i class="fa-solid fa-user"></i>Ivan Gamboa </li>
-                        <li>Dni:34343434343</li>
+                        <li><i class="fa-solid fa-user"></i>Matias&nbsp;Aysa - Dni:&nbsp;46987982</li>
+                        <li><i class="fa-solid fa-user"></i>León&nbsp;Rey - Dni:&nbsp;46874342</li>
+                        <li><i class="fa-solid fa-user"></i>Eric&nbsp;Barrios - Dni:&nbsp;46346348</li>
+                        <li><i class="fa-solid fa-user"></i>Ivan&nbsp;Gamboa&nbsp;- Dni:&nbsp;47791152</li>
                     </ul>
                 </div>
             </div>
@@ -226,16 +230,16 @@
                 <div class="pie-pagina-navegacion-soporte">
                     <h4>Soporte</h4>
                     <ul>
-                        <li>Preguntas Frecuentes</li>
-                        <li>Contactanos</li>
+                        <li><a href="../pages/footer/soporteYlegal.html">Preguntas Frecuentes</a></li>
+                        <li><a href="">Contactanos</a></li>
                     </ul>
                 </div>
                 <div class="pie-pagina-navegacion-legal">
                     <h4>Legal</h4>
                     <ul>
-                        <li>Terminos y Condiciones</li>
-                        <li>Politica de Cookies</li>
-                        <li>Politica de Privacidad</li>
+                        <li><a href="../pages/footer/soporteYlegal.html">Terminos y Condiciones</a></li>
+                        <li><a href="../pages/footer/soporteYlegal.html">Politica de Cookies</a></li>
+                        <li><a href="../pages/footer/soporteYlegal.html">Politica de Privacidad</a></li>
                     </ul>
                 </div>
             </div>
@@ -262,6 +266,7 @@
         </div>
 
     </footer>
+    <!------------------------------------ FOOTER ------------------------------------>
 </body>
 
 </html>
