@@ -16,7 +16,6 @@ a {
     color: var(--color-texto);
 }
 
-
 /* -------------------- RESET -------------------- */
 
 /* -------------------- VARIABLES -------------------- */
@@ -26,17 +25,17 @@ a {
     --color-principalDegradado: #090b35;
     --color-secundario: #e7c50c;
     --color-secundarioDegradado: #99840a;
+    --color-terciario: rgb(229, 229, 229);
     --color-texto: #f4f4f4;
 }
 
 /* -------------------- VARIABLES -------------------- */
 
-
 /* -------------------- MEDIA QUERIES -------------------- */
 
 /* --- CELUS ---*/
 @media (max-width: 480px) {
-    body{
+    body {
         font-size: 70%;
     }
 }
@@ -44,7 +43,7 @@ a {
 
 /* --- TABLETS ---*/
 @media (min-width: 481px) and (max-width: 768px) {
-    body{
+    body {
         font-size: 90%;
     }
 }

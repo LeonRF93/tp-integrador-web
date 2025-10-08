@@ -61,7 +61,7 @@
 
 }
 
-input::placeholder {
+.barra-buscador form input::placeholder {
     color: #1A1A18;
     font-size: 0.8em;
     opacity: 0.7;
@@ -76,16 +76,16 @@ input::placeholder {
     border: none;
     cursor: pointer;
     transition: all 0.5s ease;
-    border-radius: 50px;
-    height: 90%;
-    width: 3em;
+    border-radius: 50%;
+    height: 2.5em;
+    width: 2.5em;
     padding: 0;
 }
 
-.barra-buscador button:hover {
+/* .barra-buscador button:hover {
     transform: scale(1.15);
     background: #0f2566;
-}
+} */
 
 .barra-buscador button i {
     color: white;
@@ -94,11 +94,13 @@ input::placeholder {
 
 /*Carrito*/
 .buscador-carrito {
-    height: 100%;
+    height: 2.2em;
+    width: 2.2em;
+    /* width: 10%; */
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 10%;
+    border-radius: 50%;
 }
 
 .buscador-carrito a {
@@ -107,14 +109,13 @@ input::placeholder {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50px;
     text-decoration: none;
     transition: background-color 0.5s ease;
     color: white;
     position: relative;
 }
 
-.buscador-carrito a:hover {
+.buscador-carrito:hover {
     background-color: var(--color-secundario);
 }
 
@@ -126,8 +127,8 @@ input::placeholder {
     position: absolute;
     display: flex;
     font-weight: bold;
-    top: 15%;
-    left: 70%;
+    top: -10%;
+    left: 100%;
     font-size: 0.8em;
     color: red;
 
@@ -143,6 +144,7 @@ input::placeholder {
 }
 
 .navbar ul {
+    list-style: none;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -152,7 +154,8 @@ input::placeholder {
     height: 100%;
 
 }
-.navbar ul li{
+
+.navbar ul li {
     height: 100%;
 }
 
@@ -174,6 +177,7 @@ input::placeholder {
 
 /*CELUS*/
 @media (max-width: 480px) {
+
     /* HEADER*/
     .barra {
         flex-wrap: wrap;
@@ -201,19 +205,25 @@ input::placeholder {
     .barra-buscador input {
         font-size: 1em;
     }
+
     input::placeholder {
-    font-size: 1em;
+        font-size: 1em;
     }
 
     .barra-buscador button {
-        width: 15%;
+        width: 1.6em;
+        height: 1.6em;
+    }
+
+    .barra-buscador button i {
+    font-size: 0.8em;
     }
 
     .buscador-carrito {
-        height: auto;
-        width: 50%;
+        height: 4em;
+        width: 4em;
         order: 1;
-        justify-content: flex-end;
+        /* justify-content: flex-end; */
     }
 
     .buscador-carrito a i {
@@ -226,15 +236,31 @@ input::placeholder {
 
     .buscador-carrito a span {
         font-size: 1.2em;
-        top: 12%;
-        left: 70%;
+        /* top: 12%;
+        left: 70%; */
     }
 }
+
 /*TABLETS*/
 @media (min-width: 481px) and (max-width: 768px) {
+
     /*Header*/
     .barra {
         height: 2.8em;
+    }
+
+    .buscador-carrito {
+        height: 2em;
+        width: 2em;
+    }
+
+    .barra-buscador button {
+        width: 1.5em;
+        height: 1.5em;
+    }
+
+    .barra-buscador button i {
+    font-size: 0.7em;
     }
 
     input::placeholder {
@@ -242,8 +268,8 @@ input::placeholder {
     }
 
     .buscador-carrito a span {
-        top: 7%;
-        left: 78%;
+        /* top: 7%;
+        left: 78%; */
         font-size: 0.6em;
     }
 }
