@@ -1,9 +1,9 @@
-body {
-    font-size: 2em;
-}
-
 a {
     text-decoration: none;
+}
+
+main {
+    font-size: 2em;
 }
 
 /* ---------- FORMULARIO ---------- */
@@ -36,7 +36,7 @@ form {
     text-align: center;
 }
 
-.texts__p--3{
+.texts__p--3 {
     display: none;
 }
 
@@ -144,11 +144,11 @@ form {
         font-size: 70%;
     }
 
-    main  .label__usuario {
+    main .label__usuario {
         width: 100%;
     }
 
-    main  .label__datos {
+    main .label__datos {
         display: none;
         font-size: 130%;
     }
@@ -186,10 +186,14 @@ form {
 }
 
 /* --- TABLETS ---*/
-@media (min-width: 481px) and (max-width: 768px) {
+@media (max-width: 768px) {
 
     body {
-        font-size: 90%;
+        font-size: 80%;
+    }
+
+    .datos__a{
+        font-size: .5em;
     }
 
     main form .form .form__label .label__datos {
