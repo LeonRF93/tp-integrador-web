@@ -25,6 +25,7 @@ a {
     --color-secundario: #e7c50c;
     --color-secundarioDegradado: #99840a;
     --color-texto: #f4f4f4;
+    --color-terciario: rgb(229, 229, 229);
 }
 
 /* -------------------- VARIABLES -------------------- */
