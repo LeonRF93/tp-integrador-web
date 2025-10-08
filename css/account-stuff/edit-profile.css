@@ -1,7 +1,13 @@
+.sectionWrap{
+    border-radius: 15px;
+    background-color: var(--color-principalDegradado);
+    padding: 5em;
+}
+
 .volver{
     position: absolute;
     margin-right: 24.5em;
-    margin-top: .8em;
+    margin-top: 1.5em;
 }
 
 .perfil__imgWrap {
@@ -11,8 +17,8 @@
 }
 
 .perfil__imgBackground {
-    width: 18em;
-    height: 18em;
+    width: 20em;
+    height: 20em;
     border-radius: 50%;
     background-image: url(../../img/account-stuff/cambiarpfp.png);
     background-repeat: no-repeat;
@@ -22,6 +28,10 @@
 .perfil__img:hover {
     cursor: pointer;
     opacity: 20%;
+}
+
+.perfil__eliminarImg{
+    height: 20em;
 }
 
 .perfil__imgWrap i{
