@@ -15,7 +15,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="../../css/globals/globalStyles.css">
-    <link rel="stylesheet" href="../../css/homePage/homePage.css">
+    <link rel="stylesheet" href="../../css/homePage/homePage2.css">
     <link rel="stylesheet" href="../../css/globals/header.css">
     <link rel="stylesheet" href="../../css/globals/footer.css">
 </head>
@@ -27,7 +27,7 @@
     <header class="barra">
         <!----Logo de Pagina---->
         <div class="barra-logo">
-            <a href="../../index.html"><img src="../../img/globals/iconoPage.png" alt="Logo Team Queso"></a>
+            <a href="../homePage/homePage.html"><img src="../../img/globals/iconoPage.png" alt="Logo Team Queso"></a>
         </div>
         <!---------------------->
 
@@ -52,7 +52,7 @@
 
         <!---Carrito--->
         <div class="buscador-carrito">
-            <a href="./canasto.html" aria-label="Carrito de compras">
+            <a href="../courses/carrito.html" aria-label="Carrito de compras">
                 <i class="fa-solid fa-cart-shopping"></i>
                 <span>1</span>
             </a>
@@ -65,9 +65,11 @@
     <nav class="navbar">
         <ul>
             <li><a href="./homePage.html">Inicio</a></li>
-            <li><a href="./contact.html">Contacto</a></li>
-            <li><a href="./giftcard.html">Giftcard</a></li>
-            <li><a href="./calendar.html">Calendario</a></li>
+            <li><a href="../contact/contact.html">Contacto</a></li>
+            <li><a href="../giftcard/giftcard.html">Giftcard</a></li>
+            <li><a href="../calendar/calendar.html">Calendario</a></li>
+            <li><a href="../courses/my-courses.html">Mis cursos</a></li>
+            <li><a href="../account-stuff/my-profile.html">Mi perfil</a></li>
         </ul>
     </nav>
     <!------------------------------------------------>
@@ -77,47 +79,120 @@
     <!----------------CONTENIDO PRINCIPAL------------------>
     <main>
 
-        <!--------Seccion para Girf Card---------->
-        <section class="main_seccionGiftCard">
-            <div class="seccionGirfCard-contenido">
-                <h2>Regalá conocimiento con nuestras Gift Cards personalizadas</h2>
-                <p id="contenido-pregunta">¿Buscás un regalo diferente, útil y con impacto real? </p>
-                <p>Nuestras Gift Cards son la manera más simple de sorprender a
-                    alguien con la posibilidad de aprender.</p>
-                <p>Ya sea para un cumpleaños, un reconocimiento laboral o simplemente como detalle especial,
-                    las Gift Cards transforman el aprendizaje en el mejor obsequio.</p>
-                <p>Conocé nuestras Gift Cards y empezá a regalar educación hoy mismo.</p>
-                <span id="contenido-regalar"><a href=""><i class="fa-solid fa-gift"></i>
-                        Regalar Gift Card <i class="fa-solid fa-arrow-right"></i></a></span>
+        <!--------Seccion Recomendados---------->
+        <section class="main_misCursos">
+            <div class="misCursos_titulo">
+                <h2>Mis cursos</h2>
+                <span><a href="">ver todos</a></span>
             </div>
-            <div class="seccionGirfCard-imagen">
-                <a href=""><img src="../../img/giftCard.png" alt="Imagen de la Gift Card">
+            <div class="misCursos_contenido">
+                <a href="">
+                    <article class="contenido_card">
+                        <div class="card_imagenCurso">
+                            <img src="../../img/cursos/cursoJAVA.jpg" alt="">
+                        </div>
+                        <div class="card_infoCurso">
+                            <h4>Java Desde Cero</h4>
+                            <span>Profesor</span>
+                            <span>Duracion :</span>
+                        </div>
+                    </article>
+                </a>
+                <a href="">
+                    <article class="contenido_card">
+                        <div class="card_imagenCurso">
+                            <img src="../../img/cursos/cursoJAVA.jpg" alt="">
+                        </div>
+                        <div class="card_infoCurso">
+                            <h4>Java Desde Cero</h4>
+                            <span>Profesor</span>
+                            <span>Duracion :</span>
+                        </div>
+                    </article>
+                </a>
+                <a href="">
+                    <article class="contenido_card">
+                        <div class="card_imagenCurso">
+                            <img src="../../img/cursos/cursoJAVA.jpg" alt="">
+                        </div>
+                        <div class="card_infoCurso">
+                            <h4>Java Desde Cero</h4>
+                            <span>Profesor</span>
+                            <span>Duracion :</span>
+                        </div>
+                    </article>
                 </a>
             </div>
         </section>
         <!-------------------------------------------->
 
-        <!--------Seccion para Girf Card---------->
-        <section class="main_seccionTipoCursada">
-            <div class="seccionTipoCursadaImagen">
-                <a href=""><img src="../../img/tipoCursada.png" alt="Imagen de tipo cursada">
-                </a>
+        <!--------Seccion Proximos Lanzamientos---------->
+        <section class="main_proximos">
+            <div class="proximo_informacion">
+                <span class="prox_lanzamiento">Proximo Lanzamiento</span>
+                <h2>Curso Completo de React</h2>
+                <span id="prox_disponible">Disponible apartir del 18 Septiembre</span>
+                <p>Aprendé React desde cero con proyectos reales, explicaciones claras y
+                    recursos descargables. Ideal para quienes quieren dar el salto al desarrollo
+                    front-end con una de las tecnologías más demandadas del mercado.</p>
+                <span><a href="" id="prox_detalles">Mas Detalles.</a></span>
+                <span class="ver_calendario"><a href="">Ver Calendario</a></span>
             </div>
-            <div class="seccionTipoCursadaContenido">
-                <h2>Comprá tu curso para vos o para tu grupo: invitá a un amigo, a tu equipo o a tus estudiantes</h2>
-                <p id="pregunta-cursada">¿Querés crecer a tu ritmo o compartir la experiencia con otros? Con nuestros
-                    cursos podés elegir:</p>
-                <p><strong>Para vos: </strong>comprá tu curso y avanzá a tu ritmo, con total libertad.</p>
-                <p><strong>En grupo: </strong>sumá a un amigo, a tu equipo o a tus estudiantes y compartan el
-                    aprendizaje.</p>
-                <p>Ya sea como desafío personal o como experiencia compartida, nuestros cursos se adaptan a cada
-                    necesidad.
-                    Porque aprender no es solo crecer: es también motivarse y disfrutar en compañía.</p>
-                <span id="contenido-cursada"><a href="">
-                        Un aprendizaje, muchas formas de vivirlo<i class="fa-solid fa-arrow-right"></i></a></span>
+            <div class="proximo_imagen">
+                <a href=""><img src="../../img/cursos/reactCurso.jpg" alt="Imagen del curso React">
+                </a>
             </div>
         </section>
         <!-------------------------------------------->
+
+        <!--------Seccion Cursos Nuevos---------->
+        <section class="main_cursosNuevos">
+            <div class="cursosNuevos_titulo">
+                <h2>Ultimos cursos lanzados</h2>
+            </div>
+            <div class="cursosNuevos_contenido">
+                <a href="">
+                    <article class="contenido_cardNuevos">
+                        <div class="card_imagenCursoNuevo">
+                            <img src="../../img/cursos/cursoJAVA.jpg" alt="">
+                            <span>Nuevo</span>
+                        </div>
+                        <div class="card_infoCursoNuevo">
+                            <h4>Curso de Firebase con Angular 20</h4>
+                            <span>Por Diego Merlo Sogaray</span>
+                        </div>
+                    </article>
+                </a>
+                <a href="">
+                    <article class="contenido_cardNuevos">
+                        <div class="card_imagenCursoNuevo">
+                            <img src="../../img/cursos/cursoJAVA.jpg" alt="">
+                            <span>Nuevo</span>
+                        </div>
+                        <div class="card_infoCursoNuevo">
+                            <h4>Curso de Firebase con Angular 20</h4>
+                            <span>Por Diego Merlo Sogaray</span>
+                        </div>
+                    </article>
+                </a>
+                <a href="">
+                    <article class="contenido_cardNuevos">
+                        <div class="card_imagenCursoNuevo">
+                            <img src="../../img/cursos/cursoJAVA.jpg" alt="">
+                            <span>Nuevo</span>
+                        </div>
+                        <div class="card_infoCursoNuevo">
+                            <h4>Curso de Firebase con Angular 20</h4>
+                            <span>Por Diego Merlo Sogaray</span>
+                        </div>
+                    </article>
+                </a>
+            </div>
+        </section>
+        <!-------------------------------------------->
+        <!--------Seccion Recomendados---------->
+        <!-------------------------------------------->
+
 
         <!----Seccion 3-Cursos destacados----->
         <section class="main__seccion3">
@@ -133,7 +208,7 @@
                 <!--Curso-->
                 <article class="curso-card">
                     <div class="curso-card__imagen">
-                        <img src="../../img/jpeg.jpg" alt="Imagen curso Java">
+                        <img src="../../img/cursos/jpeg.jpg" alt="Imagen curso Java">
                     </div>
                     <div class="curso-card__contenido">
                         <h3>Desarrolador HTML</h3>
@@ -157,7 +232,7 @@
                 <!--Curso-->
                 <article class="curso-card">
                     <div class="curso-card__imagen">
-                        <img src="../../img/Python.jpg" alt="Imagen curso Java">
+                        <img src="../../img/cursos/Python.jpg" alt="Imagen curso Java">
                     </div>
                     <div class="curso-card__contenido">
                         <h3>Curso de Python</h3>
@@ -180,7 +255,7 @@
                 <!--Curso-->
                 <article class="curso-card">
                     <div class="curso-card__imagen">
-                        <img src="../../img/cursoJAVA.jpg" alt="Imagen curso Java">
+                        <img src="../../img/cursos/cursoJAVA.jpg" alt="Imagen curso Java">
                     </div>
                     <div class="curso-card__contenido">
                         <h3>Java Developer Professional</h3>
@@ -202,7 +277,7 @@
                 <!--Curso-->
                 <article class="curso-card">
                     <div class="curso-card__imagen">
-                        <img src="../../img/cursoPYTHON.jpg" alt="Imagen curso Java">
+                        <img src="../../img/cursos/cursoPYTHON.jpg" alt="Imagen curso Java">
                     </div>
                     <div class="curso-card__contenido">
                         <h3>Experto en Python</h3>
@@ -227,7 +302,7 @@
                 <!--Curso-->
                 <article class="curso-card">
                     <div class="curso-card__imagen">
-                        <img src="../../img/cursoSQL.jpg" alt="Imagen curso Java">
+                        <img src="../../img/cursos/cursoSQL.jpg" alt="Imagen curso Java">
                     </div>
                     <div class="curso-card__contenido">
                         <h3>Profesional en SQL</h3>
@@ -250,7 +325,7 @@
                 <!--Curso-->
                 <article class="curso-card">
                     <div class="curso-card__imagen">
-                        <img src="../../img/sharpCurso.jpg" alt="Imagen curso Java">
+                        <img src="../../img/cursos/sharpCurso.jpg" alt="Imagen curso Java">
                     </div>
                     <div class="curso-card__contenido">
                         <h3>C# desde Cero</h3>
@@ -273,52 +348,27 @@
                 </article>
             </div>
         </section>
-        <!----Seccion 4-Metodos de pago----->
-        <section class="main__seccion4">
-            <!---Titulo de la seccion 4--->
-            <div class="main__seccion4__texto">
-                <h2>Métodos de pago</h2>
-                <p>Aceptamos múltiples formas de pago para tu comodidad.
-                    Elige la que mejor se adapte a tus necesidades.
-                </p>
+
+
+        <!--------Seccion para Girf Card---------->
+        <section class="main_seccionGiftCard">
+            <div class="seccionGirfCard-contenido">
+                <h2>Compartí el conocimiento, creá comunidad</h2>
+                <p>Ya sos parte de La Academia. Ahora podés invitar a otros a aprender con vos.</p>
+                <p>Usá nuestras Gift Cards para regalar acceso a cursos que transforman.</p>
+                <span id="contenido-regalar"><a href=""><i class="fa-solid fa-gift"></i>
+                        Regalar giftcard <i class="fa-solid fa-arrow-right"></i></a></span>
             </div>
-            <!---Contenido de la seccion 4--->
-            <div class="main__seccion4__metodos">
-
-                <div class="metodos-carta">
-                    <i class="fa-brands fa-cc-visa"></i>
-                    <span>Visa</span>
-                </div>
-
-                <div class="metodos-carta">
-                    <i class="fa-brands fa-cc-mastercard"></i>
-                    <span>Mastercard</span>
-                </div>
-
-                <div class="metodos-carta">
-                    <i class="fa-brands fa-cc-amex"></i>
-                    <span>American Express</span>
-                </div>
-
-                <div class="metodos-carta">
-                    <i class="fa-brands fa-paypal"></i>
-                    <span>PayPal</span>
-                </div>
-
-                <div class="metodos-carta">
-                    <i class="fa-solid fa-wallet"></i>
-                    <span>Mercado Pago</span>
-                </div>
-
-                <div class="metodos-carta">
-                    <i class="fa-solid fa-building-columns"></i>
-                    <span>Transferencias</span>
-                </div>
-
+            <div class="seccionGirfCard-imagen">
+                <a href=""><img src="../../img/homePage/girdCard2.png" alt="Imagen de la Gift Card">
+                </a>
             </div>
         </section>
+        <!-------------------------------------------->
     </main>
     <!------------------------------------------->
+    
+    
     <!------------------------------------ FOOTER ------------------------------------>
     <footer class="pie-pagina">
 

@@ -220,3 +220,24 @@
     }
 
 }
+
+@media (max-width: 1100px) {
+    .cursos__contenedor {
+        flex-direction: column;
+        max-width: 30em;
+    }
+
+    .cursos__contenedor-imagen {
+        width: 100%;
+    }
+
+    .cursos__contenedor-descripcion {
+        margin: 2em 1em;
+        width: 100%;
+    }
+
+    .cursos__contenedor-compra {
+        width: 100%;
+    }
+
+}

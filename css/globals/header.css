@@ -119,6 +119,14 @@
     background-color: var(--color-secundario);
 }
 
+.iniciarSesion:hover {
+    background-color: initial;
+}
+
+.iniciarSesion a:hover {
+    color: var(--color-secundario);
+}
+
 .buscador-carrito a i {
     font-size: 1em;
 }
@@ -216,7 +224,7 @@
     }
 
     .barra-buscador button i {
-    font-size: 0.8em;
+        font-size: 0.8em;
     }
 
     .buscador-carrito {
@@ -260,7 +268,7 @@
     }
 
     .barra-buscador button i {
-    font-size: 0.7em;
+        font-size: 0.7em;
     }
 
     input::placeholder {
