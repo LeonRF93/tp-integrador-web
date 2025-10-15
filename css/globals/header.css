@@ -147,7 +147,6 @@
 .navbar {
     display: flex;
     width: 100%;
-    height: 2em;
     background-color: white;
 }
 
@@ -156,7 +155,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 10%;
+    padding: 0.7em 0;
     gap: 1em;
     width: 100%;
     height: 100%;
@@ -184,7 +183,7 @@
 /*-------------------------------------------*/
 
 /*CELUS*/
-@media (max-width: 480px) {
+@media (max-width: 484px) {
 
     /* HEADER*/
     .barra {
@@ -247,10 +246,21 @@
         /* top: 12%;
         left: 70%; */
     }
+
+    .navbar ul {
+        padding: 0.7em 0.5em;
+        gap: 0.8em;
+        flex-wrap: wrap;
+
+    }
+
+    .navbar ul li a {
+        font-size: 0.9em;
+    }
 }
 
 /*TABLETS*/
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 485px) and (max-width: 768px) {
 
     /*Header*/
     .barra {
@@ -279,5 +289,16 @@
         /* top: 7%;
         left: 78%; */
         font-size: 0.6em;
+    }
+
+    .navbar ul {
+        padding: 0.7em 0;
+        gap: 0.8em;
+        flex-wrap: wrap;
+
+    }
+
+    .navbar ul li a {
+        font-size: 0.9em;
     }
 }
